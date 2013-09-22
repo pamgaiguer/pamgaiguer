@@ -1,0 +1,18 @@
+body {
+	background-image: url('../img/bg.jpg');
+	background-color: #000;
+	font-family: "Tahoma", sans-serif;
+	text-decoration: none;
+}
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+.content {
+	background-color: #EFEFEF;
+	color: #5D7086;
+	text-shadow: 1px 1px #FFF;
+	border-radius: 8px;
+	box-shadow: 1px 1px #AAAAAA;
+	padding: 3px;
+}
