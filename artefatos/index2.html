@@ -31,8 +31,8 @@
 			<header>
 				<h1>3D Gallery <span>with CSS3 &amp; jQuery</span></h1>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Navigation</a>
-					<a href="index2.html">Auto-Slideshow</a>
+					<a href="index.html">Navigation</a>
+					<a class="current-demo" href="index2.html">Auto-Slideshow</a>
 					<a href="index3.html">3 Elements</a>
 				</nav>
 			</header>
@@ -45,23 +45,25 @@
 					<a href="#"><img src="images/5.jpg" alt="image05"><div>http://circlemeetups.com/</div></a>
 					<a href="#"><img src="images/6.jpg" alt="image06"><div>http://www.castirondesign.com/</div></a>
 					<a href="#"><img src="images/7.jpg" alt="image07"><div>http://www.foundrycollective.com/</div></a>
-					<a href="#"><img src="images/8.jpg" alt="image08"><div>http://www.mathiassterner.com/home</div></a>
+					<a href="#"><img src="images/8.jpg" alt="image08"><div>http://www.mathiassterner.com/</div></a>
 					<a href="#"><img src="images/9.jpg" alt="image09"><div>http://learnlakenona.com/</div></a>
 					<a href="#"><img src="images/10.jpg" alt="image10"><div>http://www.neighborhood-studio.com/</div></a>
 					<a href="#"><img src="images/11.jpg" alt="image11"><div>http://www.beckindesign.com/</div></a>
 					<a href="#"><img src="images/12.jpg" alt="image12"><div>http://kicksend.com/</div></a>
 				</div>
-				<nav>	
+				<!--nav>	
 					<span class="dg-prev">&lt;</span>
 					<span class="dg-next">&gt;</span>
-				</nav>
+				</nav-->
 			</section>
         </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.gallery.js"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('#dg-container').gallery();
+				$('#dg-container').gallery({
+					autoplay	:	true
+				});
 			});
 		</script/>
     </body>
