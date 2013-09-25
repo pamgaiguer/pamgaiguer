@@ -96,11 +96,11 @@ body{
 }
 .dg-container nav{
 	width: 58px;
-	position: absolute;
+	/*position: absolute;*/
 	z-index: 1000;
-	bottom: 400px;
+	/*bottom: 400px;
 	left: 50%;
-	margin-left: -29px;
+	margin-left: -29px;*/
 }
 .dg-container nav span{
 	text-indent: -9999px;
