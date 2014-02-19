@@ -16,8 +16,16 @@ body{
 	color: #f0f0f0;
 	overflow-y: scroll;
 }
+p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 .container > header{
-	padding: 20px 30px;
+	/*padding: 20px 30px;*/
 	/*margin-bottom: 40px;*/
 	display: block;
     text-align: center;
@@ -121,4 +129,18 @@ body{
 /******************** CSS Pam ********************/
 .dg-wrapper a.dg-center div.site-description{
 	bottom: -80px;
+}
+.contact-pg{
+	color: #27645C;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.4);	
+}
+.contact-pg h3, .contact-pg span{
+	text-align: center;
+	color: rgba(101,141,114,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	font-weight: bold;
+}
+.contact-pg a, .contact-pg a:hover{
+	color: #27645C;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
 }
