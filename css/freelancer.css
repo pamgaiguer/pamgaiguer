@@ -1,21 +1,15 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     overflow-x: hidden;
 }
-
 p {
     font-size: 20px;
 }
-
 p.small {
     font-size: 16px;
 }
-
+#img-profile{
+    border-radius: 50%;
+}
 a,
 a:hover,
 a:focus,
@@ -24,18 +18,11 @@ a.active {
     outline: 0;
     color: #18bc9c;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
