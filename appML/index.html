@@ -6,7 +6,8 @@
   <script src="http://www.w3schools.com/appml/2.0.1/appml.js"></script>
 </head>
 <body>
-  <table appml-data="customer.js">
+  <h1>AppML Initial Tests</h1>
+  <table appml-controller="myController" appml-data="customer.js">
     <thead>
       <tr>
         <th>Customer</th>
@@ -22,6 +23,16 @@
       </tr>
     </tbody>
   </table>
-  <div appml-include-html="inc_footer.html"></div>
+  <p>Copyright {{copyright}} </p>
+  <footer appml-include-html="inc_footer.html"></footer>
+
+  <script>
+    function myController($appml) {
+      if ($appml.message == "ready") {
+        $appml.today = new Date();
+        $appml.copyright = "W3Schools";
+      }
+    }
+  </script>
 </body>
 </html>
