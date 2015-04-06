@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>AppML - Initial Tests</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://www.w3schools.com/appml/2.0.1/appml.js"></script>
+</head>
+<body>
+  <table appml-data="customer.js">
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr appml-repeat="records">
+        <td>{{CustomerName}}</td>
+        <td>{{City}}</td>
+        <td>{{Country}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div appml-include-html="inc_footer.html"></div>
+</body>
+</html>
