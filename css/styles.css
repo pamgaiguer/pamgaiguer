@@ -293,6 +293,7 @@ textarea {
   position: relative;
   margin: 0 auto;
   max-width: 650px;
+  max-height: 300px;
   overflow: hidden; }
 
 .gallery-box .gallery-box-caption {
