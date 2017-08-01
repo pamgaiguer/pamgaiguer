@@ -31,4 +31,27 @@
        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
     });
 
+
+    $.getJSON("../languages/english.json", function(r){                  
+        $.each(r, function(key, value){
+            $("[data-label='"+key+"']").html(value);
+        });  
+    });
+
+
+    $(".link-globalization").click(function(e){
+        e.preventDefault();
+
+        var arq = $(this).data("language");
+        $.getJSON("../languages/"+arq+".json", function(r){
+            $.each(r, function(key, value){
+            console.log(value);                     
+                $("[data-label='"+key+"']").html(value);
+            });  
+        });
+
+    });
+
+
+
 })(jQuery);
