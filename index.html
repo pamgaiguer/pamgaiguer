@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" hreflang="pt" href="http://www.pamellagaiguer.com/" />
     <link rel="alternate" hreflang="en" href="http://www.pamellagaiguer.com/" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" />
-    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +52,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" data-toggle="modal" href="#aboutModal">Sobre a Pam</a></li>
+                    <li><a class="page-scroll" data-toggle="modal" href="#aboutModal" data-label="a-aboutme">Sobre a Pam</a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +64,7 @@
                 <h1 class="cursive">Pam Gaiguer</h1>
                 <h4><strong>Front End Developer - Musicista - Viajante</strong></h4>
                 <hr>
-                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Desligar vídeo</a> &nbsp;
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" data-label="a-turnOffVideo" class="btn btn-primary btn-xl">Desligar vídeo</a> &nbsp;
                 <a href="#two" class="btn btn-primary btn-xl page-scroll">Vamos lá!</a>
             </div>
         </div>
@@ -77,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Quem sou eu ?</h2>
+                    <h2 class="margin-top-0 text-primary" data-label="b-whoAmI">Quem sou eu ?</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -88,22 +88,22 @@
                     <div class="feature">
                         <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
                         <h3>Front End Developer</h3>
-                        <p class="text-muted">Sim, sou programadora front end (traduzindo, podemos dizer que sou especialista em interfaces e UX)</p>
+                        <p class="text-muted" data-label="b-explanation">Sim, sou programadora front end (traduzindo, podemos dizer que sou especialista em interfaces e UX)</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
                         <i class="icon-lg ion-music-note wow fadeInUp" data-wow-delay=".2s"></i>
-                        <h3>Musicista</h3>
-                        <p class="text-muted">Também sou músicista e cantora de formação erudita!</p>
+                        <h3 data-label="b-musician">Musicista</h3>
+                        <p class="text-muted" data-label="b-music1">Também sou músicista e cantora de formação erudita!</p>
                         <p class="text-muted">"You're a fuck**ng star! Don't let anybody tell that you're not!"</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
                         <i class="icon-lg ion-earth wow fadeIn" data-wow-delay=".3s"></i>
-                        <h3>Ansiosa por conhecimento</h3>
-                        <p class="text-muted">O mundo é tão grande, quero conhecer e aprender tudo o que for possível!</p>
+                        <h3 data-label="b-ansiosa">Ansiosa por conhecimento</h3>
+                        <p class="text-muted" data-label="b-bigworld">O mundo é tão grande, quero conhecer e aprender tudo o que for possível!</p>
                     </div>
                 </div>
             </div>
@@ -316,26 +316,6 @@
                         <i class="icon-lg ion-ios-snowy"></i>
                     </div>
                 </div>
-                <hr>
-<!--                 <div class="media wow fadeIn">
-                    <h3>Popular</h3>
-                    <div class="media-left">
-                        <i class="icon-lg ion-ios-heart-outline"></i>
-                    </div>
-                    <div class="media-body media-middle">
-                        <p>There's good reason why Bootstrap is the most used frontend framework in the world.</p>
-                    </div>
-                </div>
-                <hr> -->
-<!--                 <div class="media wow fadeInRight">
-                    <h3>Tested</h3>
-                    <div class="media-body media-middle">
-                        <p>Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.</p>
-                    </div>
-                    <div class="media-right">
-                        <i class="icon-lg ion-ios-flask-outline"></i>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -343,7 +323,6 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2 class="text-primary">Ferramentas</h2>
-                <!-- <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a> -->
             </div>
             <br>
             <hr/>
@@ -495,10 +474,10 @@
         </div>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

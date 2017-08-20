@@ -1,8 +1,13 @@
-{	
-	"a-whoiam": "Who i am",
-	"a-gallery": "Gallery",
-	"a-tools": "Caracteristics and work tools",
-	"a-contact": "Contact"
-	
+{
+  "a-whoiam": "Who i am",
+  "a-gallery": "Gallery",
+  "a-tools": "Caracteristics and work tools",
+  "a-contact": "Contact",
+  "a-turnOffVideo": "Turn off video",
+  "b-whoAmI": "Who I Am",
+  "b-explanation": "Yeah, I'm a Front End Developer, which means ",
+  "b-musician": "",
+  "b-music1": "",
+  "b-music2":
 
 }
