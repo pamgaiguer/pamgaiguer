@@ -29,9 +29,16 @@
 
     $('#galleryModal').on('show.bs.modal', function (e) {
        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
-       $('#galleryLink').attr("href",$(e.relatedTarget).data("href"));
-    });
 
+        if ($('#galleryModal').data("href") != ""){
+            $('#galleryLink').attr("href",$(e.relatedTarget).data("href"));
+            console.log("tem dado, mostro aqui");
+        }
+        else{
+            $('#galleryLink').hide();
+            console.log("escondi o link");
+        }
+    });
 
     $.getJSON("../languages/english.json", function(r){
         $.each(r, function(key, value){
