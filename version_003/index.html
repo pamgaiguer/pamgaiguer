@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pam Gaiguer - Front End Developer</title>
+    <meta name="description" content="Portfolio da front end desenvolvedora Pam Gaiguer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="pt" href="http://www.pamellagaiguer.com/" />
+    <link rel="alternate" hreflang="en" href="http://www.pamellagaiguer.com/" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44930071-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-woman"></i> Pamella Gaiguer</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="page-scroll" href="#first">Intro</a></li>
+                    <li><a class="page-scroll" data-label="a-whoiam" href="#two">Quem sou eu</a></li>
+                    <li><a class="page-scroll" data-label="a-gallery" href="#three">Galeria</a></li>
+                    <li><a class="page-scroll" data-label="a-tools" href="#four">Características e Ferramentas</a></li>
+                    <li>
+                        <a class="link-globalization" href="#" data-language="portugues" style="display: inline-block; margin-right: -20px; margin-top: 3px;" >
+                            <img src="languages/brflag.png" width="25px" height="15px" />
+                        </a>
+                        <a class="link-globalization" href="#" data-language="english" style="display: inline-block;">
+                            <img src="languages/usflag.png" width="25px" height="15px"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Pam Gaiguer</h1>
+                <h4 data-label="main-title"><strong>Front End Developer - Musicista - Viajante</strong></h4>
+                <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" data-label="a-turnOffVideo" class="btn btn-primary btn-xl">Desligar vídeo</a> &nbsp;
+                <a href="#two" class="btn btn-primary btn-xl page-scroll" data-label="a-letsgo">Vamos lá!</a>
+            </div>
+        </div>
+        <video autoplay="true" loop="true" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" id="video-background">
+            <source src="videos/typingVideo.mp4" type="video/mp4"/>
+        </video>
+    </header>
+
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary" data-label="b-whoAmI">Quem sou eu ?</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Front End Developer</h3>
+                        <p class="text-muted" data-label="b-explanation">Sim, sou programadora front end (traduzindo, podemos dizer que sou especialista em interfaces e UX)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-music-note wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3 data-label="b-musician">Musicista</h3>
+                        <p class="text-muted" data-label="b-music1">Também sou músicista e cantora de formação erudita!</p>
+                        <p class="text-muted">"You're a fuck**ng star! Don't let anybody tell that you're not!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-earth wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3 data-label="b-ansiosa">Ansiosa por conhecimento</h3>
+                        <p class="text-muted" data-label="b-bigworld">O mundo é tão grande, quero conhecer e aprender tudo o que for possível!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="three" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.pamellagaiguer.com" class="gallery-box" data-toggle="modal" data-src="images/003-bigger-leozac.png">
+                        <img src="images/003-bigger-leozac.png" class="img-responsive" alt="Leo Zaccur">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="site-leo">Leo Zaccur Fotografia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.kademi.com.br" class="gallery-box" data-toggle="modal" data-src="images/001-bigger-kademi.png">
+                        <img src="images/001-bigger-kademi.png" class="img-responsive" alt="Kademi">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="kademi">Kademi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.liliankanda.com.br" class="gallery-box" data-toggle="modal" data-src="images/006-bigger-liliankanda.JPG">
+                        <img src="images/006-bigger-liliankanda.JPG" class="img-responsive" alt="Lilian Kanda">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="blog-lilian">Blog Dra. Lilian Kanda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal"  class="gallery-box" data-toggle="modal" data-src="images/002-bigger-noturnall.png">
+                        <img src="images/002-bigger-noturnall.png" class="img-responsive" alt="Noturnall">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="noturnall">Banda Noturnall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.rdscodes.com.br" class="gallery-box" data-toggle="modal" data-src="images/004-bigger-rdscodes.png">
+                        <img src="images/004-bigger-rdscodes.png" class="img-responsive" alt="RDS">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p>RDS Codes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.seikialimentos.com.br" class="gallery-box" data-toggle="modal" data-src="images/009-bigger-seiki.png">
+                        <img src="images/009-bigger-seiki.png" class="img-responsive" alt="Seiki Alimentos">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="seiki">Seiki Alimentos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.foccocambio.com.br" class="gallery-box" data-toggle="modal" data-src="images/011-bigger-focco.png">
+                        <img src="images/011-bigger-focco.png" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="focco">Focco Câmbio e Turismo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.pamellagaiguer.com" class="gallery-box" data-toggle="modal" data-src="images/008-bigger-edsonyassuo.png">
+                        <img src="images/008-bigger-edsonyassuo.png" class="img-responsive" alt="Edson Yassuo">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="edsonyassuo">Edson Yassuo - Videografista, designer e animador</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.pamellagaiguer.com" class="gallery-box" data-toggle="modal" data-src="images/005-bigger-rdsdigital.png">
+                        <img src="images/005-bigger-rdsdigital.png" class="img-responsive" alt="RDS">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p>RDS Digital (2014 - offline)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="" class="gallery-box" data-toggle="modal" data-src="images/010-bigger-institutoAlpha.png">
+                        <img src="images/010-bigger-institutoAlpha.png" class="img-responsive" alt="Instituto Alpha">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="alpha">Instituto Alpha (2015)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="" class="gallery-box" data-toggle="modal" data-src="images/007-bigger-visiarq.png">
+                        <img src="images/007-bigger-visiarq.png" class="img-responsive" alt="VisiArq">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="visi">Visi Arquitetos (2014 - offline)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.meseems.com.br" class="gallery-box" data-toggle="modal" data-src="images/meseems.png">
+                        <img src="images/meseems.png" class="img-responsive" alt="MeSeems" style="max-height: 646px">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="meseems">MeSeems <br> Aplicativo de pesquisas em realtime (2016)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.mindminers.com" class="gallery-box" data-toggle="modal" data-src="images/mindminers.png">
+                        <img src="images/mindminers.png" class="img-responsive" alt="MindMiners">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="mindminers">Mindminers (2016)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" data-href="http://www.paodeacucar.com" class="gallery-box" data-toggle="modal" data-src="images/paodeacucar.png">
+                        <img src="images/paodeacucar.png" class="img-responsive" alt="MeSeems">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p data-label="paodeacucar">Pão de Açúcar (2017)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid" id="four">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <h2 class="text-center text-primary" data-label="caracteristics-all">Características</h2>
+            <h5 class="text-center" data-label="todevelop">Para o desenvolvimento dessas belezinhas aí em cima <i class="ion-happy-outline"></i></h5>
+            <hr>
+            <div class="media wow fadeInRight">
+                <h3 data-label="simples">Simples</h3>
+                <div class="media-body media-middle">
+                    <p data-label="simples-explain">Simples, rápidos e práticos: é isso que prezo no desenvolvimento dos meus sites e sistemas.</p>
+                </div>
+                <div class="media-right">
+                    <i class="icon-lg ion-ios-bolt-outline"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="media wow fadeIn">
+                <h3 data-label="open-source">Open Source</h3>
+                <div class="media-left">
+                    <i class="icon-lg ion-social-tux"></i>
+                </div>
+                <div class="media-body media-middle">
+                    <p data-label="open-source-explain">Prefiro usar tecnologias opensource pois são de fácil manutenção e manipulação. Menos custos para o meu cliente final.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media wow fadeInRight">
+                <h3 data-label="unicas">Únicas</h3>
+                <div class="media-body media-middle">
+                    <p data-label="unicas-explain">Pois mesmo usando padrões, seu site deve ter a sua cara e não padrões internéticos, concorda? Sites são únicos assim como flocos de neve, não adianta: parecem iguais mas nunca são! </p>
+                </div>
+                <div class="media-right">
+                    <i class="icon-lg ion-ios-snowy"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2 class="text-primary" data-label="mytools"><i class="icon-sm ion-code-working"></i> Ferramentas <i class="icon-sm ion-code-working"></i></h2>
+        </div>
+        <br>
+        <hr/>
+        <br>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <h4 class="wide-space text-center" data-label="explanation">Costumo usar essa tecnologias abaixo nos meus sites, se adaptam a qualquer tipo de tela (celular, computador, televisões), ficam rápidos e bonitões.</h4>
+                    <div class="col-sm-3 col-xs-6 text-center">
+                        <i class="icon-lg ion-social-html5"></i>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 text-center">
+                        <i class="icon-lg ion-social-sass"></i>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 text-center">
+                        <i class="icon-lg ion-social-javascript"></i>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 text-center">
+                        <i class="icon-lg ion-social-css3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 column"></div>
+            <div class="col-xs-6 col-sm-3 column"></div>
+            <div class="col-xs-12 col-sm-3 column"></div>
+            <div class="col-xs-12 col-sm-3 text-right">
+                <h4 data-label="follow-me">Persiga-me!</h4>
+                <ul class="list-inline">
+                    <li><a rel="nofollow" href="https://twitter.com/pam_gaiguer" title="Twitter"><i class="icon-md ion-social-twitter-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="https://br.linkedin.com/in/pamellagaiguer" title="Linkedin"><i class="icon-md ion-social-linkedin-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="https://www.youtube.com/pamgaiguer" title="YouTube"><i class="icon-md ion-social-youtube-outline"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <span class="pull-right text-muted small"><a href="http://www.pamellagaiguer.com">Pamella Gaiguer</a> &copy;<script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script></span>
+    </div>
+</footer>
+<div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
+                <p>
+                    <br/>
+                    <p class="text-center"><a id="galleryLink" target="_blank">Go to page</a></p>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
