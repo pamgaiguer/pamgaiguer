@@ -51,7 +51,7 @@ import { HomeComponent } from "./home/home.component";
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
-    LandingpageComponent
+    HomeComponent
   ],
   providers: []
 })
