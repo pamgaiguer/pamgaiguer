@@ -1,58 +1,68 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
-import { BsDropdownModule } from "ngx-bootstrap/dropdown";
-import { ProgressbarModule } from "ngx-bootstrap/progressbar";
-import { TooltipModule } from "ngx-bootstrap/tooltip";
-import { CollapseModule } from "ngx-bootstrap/collapse";
-import { TabsModule } from "ngx-bootstrap/tabs";
-import { PaginationModule } from "ngx-bootstrap/pagination";
-import { AlertModule } from "ngx-bootstrap/alert";
-import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
-import { CarouselModule } from "ngx-bootstrap/carousel";
-import { ModalModule } from "ngx-bootstrap/modal";
-import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
-import { PopoverModule } from "ngx-bootstrap/popover";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { DataTablesModule } from 'angular-datatables';
 
-import { IndexComponent } from "./index/index.component";
-import { ProfilepageComponent } from "./profilepage/profilepage.component";
-import { RegisterpageComponent } from "./registerpage/registerpage.component";
-import { HomeComponent } from "./home/home.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CookieLawModule } from 'angular2-cookie-law';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+
+import { DashComponent } from './dash/dash.component';
+import { HowtouseComponent } from './howtouse/howtouse.component';
+import { HowtouseSchoolsComponent } from './howtouse_schools/howtouse_schools.component';
+import { ArticleComponent } from './article/article.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { NotesComponent } from './notes/notes.component';
+import { PublicityComponent } from './publicity/publicity.component';
+import { PublicationsComponent } from './publications/publications.component';
+import { HomeComponent } from './home/home.component';
+import { CopacabanaComponent } from './case-study/copacabana/copacabana.component';
+import { FortalezaComponent } from './case-study/fortaleza/fortaleza.component';
+import { HowToActComponent } from './how-to-act/how-to-act.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { PartnersComponent } from './partners/partners.component';
+import { MethodologyComponent } from './methodology/methodology.component';
+import * as $ from "jquery";
+import { SaopauloComponent } from './case-study/saopaulo/saopaulo.component';
+import { CuritibaComponent } from './case-study/curitiba/curitiba.component';
+import { SchoolsComponent } from './schools/schools.component';
+
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserModule,
-    FormsModule,
-    RouterModule,
-    BsDropdownModule.forRoot(),
-    ProgressbarModule.forRoot(),
-    TooltipModule.forRoot(),
-    PopoverModule.forRoot(),
-    CollapseModule.forRoot(),
-    JwBootstrapSwitchNg2Module,
-    TabsModule.forRoot(),
-    PaginationModule.forRoot(),
-    AlertModule.forRoot(),
-    BsDatepickerModule.forRoot(),
-    CarouselModule.forRoot(),
-    ModalModule.forRoot()
-  ],
-  declarations: [
-    IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
-    HomeComponent
-  ],
-  exports: [
-    IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
-    HomeComponent
-  ],
-  providers: []
+    imports: [
+        CommonModule,
+        FormsModule,
+        NgbModule,
+        RouterModule,
+        PdfViewerModule,
+        DataTablesModule,
+        BrowserAnimationsModule,
+        CookieLawModule,
+        NgxTwitterTimelineModule
+    ],
+    declarations: [
+        DashComponent,
+        HowtouseComponent,
+        HowtouseSchoolsComponent,
+        ArticleComponent,
+        AboutusComponent,
+        NotesComponent,
+        PublicityComponent,
+        PublicationsComponent,
+        HomeComponent,
+        CopacabanaComponent,
+        FortalezaComponent,
+        HowToActComponent,
+        StatisticsComponent,
+        PartnersComponent,
+        MethodologyComponent,
+        SaopauloComponent,
+        CuritibaComponent,
+        SchoolsComponent,
+    ]
 })
-export class PagesModule {}
+export class PagesModule { }

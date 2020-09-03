@@ -1,0 +1,157 @@
+<div class="main statistics">
+    <div class="section section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3>Estatísticas</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="card">
+                        <p>
+                            Nesta página, apresentamos as estatísticas e os estudos de caso sobre a vulnerabilidade à Covid-19 e as medidas de proteção às populações expostas. Empregamos o Índice de Proteção ao Covid-19 <a href="./assets/articles/2506_Artigo_IPC19.pdf" target="_blank">(clique aqui para conhecer)</a>  para compreender as curvas de infecção, morte e mortalidade, segundo as diferentes escalas de vulnerabilidade. 
+                            Segue abaixo as faixas do mesmo e sua correspondência com o Índice de Desenvolvimento Humano: 
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3"></div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped table2 float-left">
+                                        <thead>
+                                            <tr>
+                                                <th>Pontuação</th>
+                                                <th>Indicativo Covid-19</th>
+                                                <th>Cor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>acima de 0.8</td>
+                                                <td>Proteção muito alta</td>
+                                                <td style="background-color: rgb(076, 175,233); color: black;">Azul</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.7 a 0.799</td>
+                                                <td>Proteção Alta</td>
+                                                <td style="background-color: rgb(117, 249,76); color: black;">Verde</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.6 a 0.699</td>
+                                                <td>Proteção Média</td>
+                                                <td style="background-color: rgb(255, 253,85); color: black;">Amarela</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.5 a 0.599</td>
+                                                <td>Proteção Baixa</td>
+                                                <td style="background-color: rgb(242, 157,57); color: black;">Laranja</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abaixo de 0.5</td>
+                                                <td>Proteção Muito Baixa</td>
+                                                <td style="background-color: rgb(188, 38,26); color: black;">Vermelho</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3"></div>
+
+                        </div>
+                        
+                        
+                    </div>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="static-1">
+                            <ng-template ngbPanelTitle>
+                                <h4>São Paulo</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    Com base nos dados do DataSUS de hospitalizações de Síndrome Respiratória Aguda Grave (2020) e do Censo (IBGE, 2010), e com a parceria do LabCidade FAU-USP, foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de São Paulo para cada uma das escalas do Índice de Proteção ao Covid-19.
+                                </p>
+                                <p>
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, para faixas mais baixas, que representam bairros onde o poder aquisitivo é menor e que portanto são vistos como mais vulneráveis ao vírus, é possível notar que a quantidade de casos e óbitos é maior do que nos bairros menos vulneráveis do município, onde o índice é maior e a vulnerabilidade, por sua vez, menor.
+                                </p>
+                                <p>
+                                    Em relação à letalidade, podemos também observar esse fenômeno. Para bairros cuja proteção é muito baixa, a taxa de letalidade é quase 5% maior do que em bairros cujo índice foi classificado como alto. Ou seja, a razão entre óbitos e casos para os bairros classificados como baixa proteção ao covid-19 é relevante mesmo sem considerar a diferença na oferta de testes para esses diferentes segmentos da população
+                                </p>
+                                <p>
+                                    Possivelmente, mais testes são feitos entre a população com um nível mais alto de proteção ao covid-19. A diferença significativa na taxa de letalidade entre os grupos também permite levantar a hipótese de que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.  
+                                </p>
+                                <p>
+                                    <strong>* Foram considerados apenas os registros com CEP identificável entre 17/03/2020 e 18/05/2020. </strong>
+                                </p>
+                                <iframe id="saopaulo" src="https://datastudio.google.com/embed/reporting/5ab7d932-9b66-46f4-ac96-a7e1825ea125/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                        <ngb-panel id="static-2">
+                            <ng-template ngbPanelTitle>
+                                <h4>Rio de Janeiro</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    Com as bases do Data Rio (2020) e do Censo (IBGE, 2010), foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município do Rio de Janeiro para cada uma das escalas do IPC19.
+                                </p>
+                                <p>
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, no primeiro momento, o vírus atingiu o grupo menos vulnerável, que se concentra nos bairros onde o poder aquisitivo é maior. Em seguida, avançou para as regiões mais vulneráveis do Rio, onde vive considerável parcela dos trabalhadores essenciais. 
+                                </p>
+                                <p>
+                                    A incidência de contaminados e mortos é mais baixa nas faixas de média e baixa vulnerabilidade, ao passo que a taxa de mortalidade da parcela vulnerável e muito vulnerável à doença é mais alta. Há uma diferença significativa entre índices de mortalidade de bairros cuja a vulnerabilidade foi considerada baixa e os índices dos bairros considerados vulneráveis ou muito vulneráveis.
+                                </p>
+                                <p>
+                                    Podemos presumir que mais testes são feitos entre a população menos vulnerável, mas isso não se repete para o grupo mais vulnerável. Esta diferença pode provocar uma elevada subnotificações nessas localidades. A diferença significativa na taxa de mortalidade entre os grupos também permite inferir que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.
+                                </p>
+                                
+                                <iframe id="riodejaneiro" src="https://datastudio.google.com/embed/reporting/98e493ef-b0fb-4396-9d7b-c395f3681b5e/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="static-3">
+                            <ng-template ngbPanelTitle>
+                                <h4>Fortaleza</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    Com as bases do IntegraSUS (2020) e do Censo (IBGE, 2010), foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de Fortaleza para cada uma das escalas do IPC19.
+                                </p>
+                                <p>
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, no primeiro momento, o vírus atingiu o grupo que possui alta proteção ao covid-19 e que se concentra nos bairros onde o poder aquisitivo é maior. Em seguida, avançou para as regiões mais vulneráveis, onde vive considerável parcela dos trabalhadores essenciais.
+                                </p>
+                                <p>
+                                    A incidência de contaminados, mortos, bem como a taxa de letalidade é mais alta nas faixas de baixa e muito baixa proteção ao covid-19, o mesmo podemos observar ao analisar esses indicadores em cada uma das faixas do Indice de Desenvolvimento Humano (IDH).
+                                </p>
+                                <p>
+                                    Podemos presumir que mais testes são feitos entre a população menos exposta ao vírus, o que não se repete para o grupo mais vulnerável. A diferença significativa na taxa de letalidade entre os grupos também permite inferir que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.
+                                </p>
+                                <iframe id="fortaleza" src="https://datastudio.google.com/embed/reporting/9ba420d4-a555-414c-a671-00f50821a6b1/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                        <ngb-panel id="static-4">
+                            <ng-template ngbPanelTitle>
+                                <h4>Curitiba</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <iframe id="curitiba" src="https://datastudio.google.com/embed/reporting/24563249-bc98-4dd1-9266-5d9b6ffc027b/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                        <ngb-panel id="static-5">
+                            <ng-template ngbPanelTitle>
+                                <h4>Brasil</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    A partir dos dados de casos e óbitos fornecidos diariamente pelas secretarias estaduais e compilados pelo grupo Brasil.io foi possível construir um painel com atualização diária de casos, óbitos e letalidade para todo o Brasil.
+                                </p>
+                                <iframe id="brazil" src="https://datastudio.google.com/embed/reporting/f5dbc47c-f6df-4885-9d15-5c63535fe1c9/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                    </ngb-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

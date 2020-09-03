@@ -1,0 +1,48 @@
+<div class="main publications">
+    <div class="section section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3>Publicações</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="list-group">
+                        <a routerLink="note6" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Nota técnica Simulador do coronavírus em ambientes escolares na reabertura das escolas no Estado de SP (21/08/2020)
+                        </a>
+                        <a routerLink="note5" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Estudo dos efeitos da redução do distanciamento social na Cidade de São Paulo (12/07/2020)
+                        </a>
+                        <a routerLink="note3" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            O Índice de Proteção COVID-19 (IPC19) (25/06/2020)
+                        </a>
+                        <a routerLink="note4" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Nota técnica sobre o relaxamento do isolamento social no Estado de São Paulo previsto para o dia 1º de junho de 2020 (01/06/2020)
+                        </a>
+                        <a routerLink="note2" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Nota sobre estudo que prevê data para o fim da Pandemia (29/04/2020)
+                        </a>
+                        <a routerLink="note1" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Dados do prefeito de São José dos Campos são questionáveis (22/04/2020)
+                        </a>
+                        <a routerLink="article1" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Simulando a evolução da transmissão comunitária do coronavírus por meio do Modelo MD Corona (04/04/2020)
+                        </a>
+                        <!-- <a routerLink="article2" routerLinkActive="active" class="list-group-item list-group-item-action">
+                            Press Release
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <!-- <p [class.d-none]="isOpen()">Escolha o artigo a ser lido na sua lateral.</p> -->
+                    <router-outlet></router-outlet>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>

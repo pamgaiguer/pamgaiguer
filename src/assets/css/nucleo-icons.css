@@ -1,105 +1,89 @@
-/* --------------------------------
+/*--------------------------------
 
-Nucleo Outline Web Font - nucleoapp.com/
+nucleo-icons Web Font - built using nucleoapp.com
 License - nucleoapp.com/license/
-Created using IcoMoon - icomoon.io
 
 -------------------------------- */
-
 @font-face {
-  font-family: 'Nucleo';
-  src: url('../fonts/nucleo.eot');
-  src: url('../fonts/nucleo.eot') format('embedded-opentype'), url('../fonts/nucleo.woff2') format('woff2'), url('../fonts/nucleo.woff') format('woff'), url('../fonts/nucleo.ttf') format('truetype');
+  font-family: 'nucleo-icons';
+  src: url('../fonts/nucleo-icons.eot');
+  src: url('../fonts/nucleo-icons.eot') format('embedded-opentype'), url('../fonts/nucleo-icons.woff2') format('woff2'), url('../fonts/nucleo-icons.woff') format('woff'), url('../fonts/nucleo-icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 /*------------------------
 	base class definition
 -------------------------*/
-
-.tim-icons {
+.nc-icon {
   display: inline-block;
-  font: normal normal normal 1em/1 'Nucleo';
-  vertical-align: middle;
+  font: normal normal normal 14px/1 'nucleo-icons';
+  font-size: inherit;
   speak: none;
   text-transform: none;
   /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.font-icon-detail {
-  text-align: center;
-  padding: 45px 0 30px;
-  border: 1px solid #e44cc4;
-  border-radius: .1875rem;
-  margin: 15px 0;
-  min-height: 168px;
-}
-
-.font-icon-detail i {
-  color: #FFFFFF;
-  font-size: 1.5em;
-}
-
-.font-icon-detail p {
-  color: #e44cc4 !important;
-  margin-top: 30px;
-  padding: 0 10px;
-  font-size: .7142em;
-}
-
 /*------------------------
   change icon size
 -------------------------*/
-
-.tim-icons-sm {
-  font-size: 0.8em;
+.nc-icon.lg {
+  font-size: 1.33333333em;
+  vertical-align: -16%;
 }
-
-.tim-icons-lg {
-  font-size: 1.2em;
+.nc-icon.x2 {
+  font-size: 2em;
 }
-
-/* absolute units */
-
-.tim-icons-16 {
-  font-size: 16px;
+.nc-icon.x3 {
+  font-size: 3em;
 }
-
-.tim-icons-32 {
-  font-size: 32px;
-}
-
 /*----------------------------------
   add a square/circle background
 -----------------------------------*/
-
-.tim-icons-bg-square,
-.tim-icons-bg-circle {
-  padding: 0.35em;
+.nc-icon.square,
+.nc-icon.circle {
+  padding: 0.33333333em;
+  vertical-align: -16%;
+  background-color: #eee;
 }
-
-.tim-icons-bg-circle {
+.nc-icon.circle {
   border-radius: 50%;
 }
-
 /*------------------------
   list icons
 -------------------------*/
-
+.nc-icon-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.nc-icon-ul > li {
+  position: relative;
+}
+.nc-icon-ul > li > .nc-icon {
+  position: absolute;
+  left: -1.57142857em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.nc-icon-ul > li > .nc-icon.lg {
+  top: 0;
+  left: -1.35714286em;
+}
+.nc-icon-ul > li > .nc-icon.circle,
+.nc-icon-ul > li > .nc-icon.square {
+  top: -0.19047619em;
+  left: -1.9047619em;
+}
 /*------------------------
   spinning icons
 -------------------------*/
-
-.tim-icons-is-spinning {
-  -webkit-animation: tim-icons-spin 2s infinite linear;
-  -moz-animation: tim-icons-spin 2s infinite linear;
-  animation: tim-icons-spin 2s infinite linear;
+.nc-icon.spin {
+  -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
+  animation: nc-icon-spin 2s infinite linear;
 }
-
-@-webkit-keyframes tim-icons-spin {
+@-webkit-keyframes nc-icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -107,8 +91,7 @@ Created using IcoMoon - icomoon.io
     -webkit-transform: rotate(360deg);
   }
 }
-
-@-moz-keyframes tim-icons-spin {
+@-moz-keyframes nc-icon-spin {
   0% {
     -moz-transform: rotate(0deg);
   }
@@ -116,8 +99,7 @@ Created using IcoMoon - icomoon.io
     -moz-transform: rotate(360deg);
   }
 }
-
-@keyframes tim-icons-spin {
+@keyframes nc-icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -133,411 +115,452 @@ Created using IcoMoon - icomoon.io
     transform: rotate(360deg);
   }
 }
-
 /*------------------------
   rotated/flipped icons
 -------------------------*/
-
+.nc-icon.rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.nc-icon.rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.nc-icon.rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.nc-icon.flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.nc-icon.flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
 /*------------------------
-	icons
+	font icons
 -------------------------*/
 
-.icon-alert-circle-exc::before {
-  content: "\ea02";
+.nc-air-baloon::before {
+    content: "\ea01";
 }
 
-.icon-align-center::before {
-  content: "\ea03";
+.nc-album-2::before {
+    content: "\ea02";
 }
 
-.icon-align-left-2::before {
-  content: "\ea04";
+.nc-alert-circle-i::before {
+    content: "\ea04";
 }
 
-.icon-app::before {
-  content: "\ea05";
+.nc-align-center::before {
+    content: "\ea03";
 }
 
-.icon-atom::before {
-  content: "\ea06";
+.nc-align-left-2::before {
+    content: "\ea05";
 }
 
-.icon-attach-87::before {
-  content: "\ea07";
+.nc-ambulance::before {
+    content: "\ea06";
 }
 
-.icon-badge::before {
-  content: "\ea08";
+.nc-app::before {
+    content: "\ea07";
 }
 
-.icon-bag-16::before {
-  content: "\ea09";
+.nc-atom::before {
+    content: "\ea08";
 }
 
-.icon-bank::before {
-  content: "\ea0a";
+.nc-badge::before {
+    content: "\ea09";
 }
 
-.icon-basket-simple::before {
-  content: "\ea0b";
+.nc-bag-16::before {
+    content: "\ea0a";
 }
 
-.icon-bell-55::before {
-  content: "\ea0c";
+.nc-bank::before {
+    content: "\ea0b";
 }
 
-.icon-bold::before {
-  content: "\ea0d";
+.nc-basket::before {
+    content: "\ea0c";
 }
 
-.icon-book-bookmark::before {
-  content: "\ea0e";
+.nc-bell-55::before {
+    content: "\ea0d";
 }
 
-.icon-bulb-63::before {
-  content: "\ea0f";
+.nc-bold::before {
+    content: "\ea0e";
 }
 
-.icon-bullet-list-67::before {
-  content: "\ea10";
+.nc-book-bookmark::before {
+    content: "\ea0f";
 }
 
-.icon-bus-front-12::before {
-  content: "\ea11";
+.nc-bookmark-2::before {
+    content: "\ea10";
 }
 
-.icon-button-pause::before {
-  content: "\ea12";
+.nc-box-2::before {
+    content: "\ea11";
 }
 
-.icon-button-power::before {
-  content: "\ea13";
+.nc-box::before {
+    content: "\ea12";
 }
 
-.icon-calendar-60::before {
-  content: "\ea14";
+.nc-briefcase-24::before {
+    content: "\ea13";
 }
 
-.icon-camera-18::before {
-  content: "\ea15";
+.nc-bulb-63::before {
+    content: "\ea14";
 }
 
-.icon-caps-small::before {
-  content: "\ea16";
+.nc-bullet-list-67::before {
+    content: "\ea15";
 }
 
-.icon-cart::before {
-  content: "\ea17";
+.nc-bus-front-12::before {
+    content: "\ea16";
 }
 
-.icon-chart-bar-32::before {
-  content: "\ea18";
+.nc-button-pause::before {
+    content: "\ea17";
 }
 
-.icon-chart-pie-36::before {
-  content: "\ea19";
+.nc-button-play::before {
+    content: "\ea18";
 }
 
-.icon-chat-33::before {
-  content: "\ea1a";
+.nc-button-power::before {
+    content: "\ea19";
 }
 
-.icon-check-2::before {
-  content: "\ea1b";
+.nc-calendar-60::before {
+    content: "\ea1a";
 }
 
-.icon-cloud-download-93::before {
-  content: "\ea1c";
+.nc-camera-compact::before {
+    content: "\ea1b";
 }
 
-.icon-cloud-upload-94::before {
-  content: "\ea1d";
+.nc-caps-small::before {
+    content: "\ea1c";
 }
 
-.icon-coins::before {
-  content: "\ea1e";
+.nc-cart-simple::before {
+    content: "\ea1d";
 }
 
-.icon-compass-05::before {
-  content: "\ea1f";
+.nc-chart-bar-32::before {
+    content: "\ea1e";
 }
 
-.icon-controller::before {
-  content: "\ea20";
+.nc-chart-pie-36::before {
+    content: "\ea1f";
 }
 
-.icon-credit-card::before {
-  content: "\ea21";
+.nc-chat-33::before {
+    content: "\ea20";
 }
 
-.icon-delivery-fast::before {
-  content: "\ea22";
+.nc-check-2::before {
+    content: "\ea21";
 }
 
-.icon-double-left::before {
-  content: "\ea23";
+.nc-circle-10::before {
+    content: "\ea22";
 }
 
-.icon-double-right::before {
-  content: "\ea24";
+.nc-cloud-download-93::before {
+    content: "\ea23";
 }
 
-.icon-email-85::before {
-  content: "\ea25";
+.nc-cloud-upload-94::before {
+    content: "\ea24";
 }
 
-.icon-gift-2::before {
-  content: "\ea26";
+.nc-compass-05::before {
+    content: "\ea25";
 }
 
-.icon-globe-2::before {
-  content: "\ea27";
+.nc-controller-modern::before {
+    content: "\ea26";
 }
 
-.icon-headphones::before {
-  content: "\ea28";
+.nc-credit-card::before {
+    content: "\ea27";
 }
 
-.icon-heart-2::before {
-  content: "\ea29";
+.nc-delivery-fast::before {
+    content: "\ea28";
 }
 
-.icon-html5::before {
-  content: "\ea2a";
+.nc-diamond::before {
+    content: "\ea29";
 }
 
-.icon-image-02::before {
-  content: "\ea2b";
+.nc-email-85::before {
+    content: "\ea2a";
 }
 
-.icon-istanbul::before {
-  content: "\ea2c";
+.nc-favourite-28::before {
+    content: "\ea2b";
 }
 
-.icon-key-25::before {
-  content: "\ea2d";
+.nc-glasses-2::before {
+    content: "\ea2c";
 }
 
-.icon-laptop::before {
-  content: "\ea2e";
+.nc-globe-2::before {
+    content: "\ea2d";
 }
 
-.icon-light-3::before {
-  content: "\ea2f";
+.nc-globe::before {
+    content: "\ea2e";
 }
 
-.icon-link-72::before {
-  content: "\ea30";
+.nc-hat-3::before {
+    content: "\ea2f";
 }
 
-.icon-lock-circle::before {
-  content: "\ea31";
+.nc-headphones::before {
+    content: "\ea30";
 }
 
-.icon-map-big::before {
-  content: "\ea32";
+.nc-html5::before {
+    content: "\ea31";
 }
 
-.icon-minimal-down::before {
-  content: "\ea33";
+.nc-image::before {
+    content: "\ea32";
 }
 
-.icon-minimal-left::before {
-  content: "\ea34";
+.nc-istanbul::before {
+    content: "\ea33";
 }
 
-.icon-minimal-right::before {
-  content: "\ea35";
+.nc-key-25::before {
+    content: "\ea34";
 }
 
-.icon-minimal-up::before {
-  content: "\ea36";
+.nc-laptop::before {
+    content: "\ea35";
 }
 
-.icon-mobile::before {
-  content: "\ea37";
+.nc-layout-11::before {
+    content: "\ea36";
 }
 
-.icon-molecule-40::before {
-  content: "\ea38";
+.nc-lock-circle-open::before {
+    content: "\ea37";
 }
 
-.icon-money-coins::before {
-  content: "\ea39";
+.nc-map-big::before {
+    content: "\ea38";
 }
 
-.icon-notes::before {
-  content: "\ea3a";
+.nc-minimal-down::before {
+    content: "\ea39";
 }
 
-.icon-palette::before {
-  content: "\ea3b";
+.nc-minimal-left::before {
+    content: "\ea3a";
 }
 
-.icon-paper::before {
-  content: "\ea3c";
+.nc-minimal-right::before {
+    content: "\ea3b";
 }
 
-.icon-pencil::before {
-  content: "\ea3d";
+.nc-minimal-up::before {
+    content: "\ea3c";
 }
 
-.icon-pin::before {
-  content: "\ea3e";
+.nc-mobile::before {
+    content: "\ea3d";
 }
 
-.icon-planet::before {
-  content: "\ea3f";
+.nc-money-coins::before {
+    content: "\ea3e";
 }
 
-.icon-puzzle-10::before {
-  content: "\ea40";
+.nc-note-03::before {
+    content: "\ea3f";
 }
 
-.icon-satisfied::before {
-  content: "\ea41";
+.nc-palette::before {
+    content: "\ea40";
 }
 
-.icon-scissors::before {
-  content: "\ea42";
+.nc-paper::before {
+    content: "\ea41";
 }
 
-.icon-send::before {
-  content: "\ea43";
+.nc-pin-3::before {
+    content: "\ea42";
 }
 
-.icon-settings-gear-63::before {
-  content: "\ea44";
+.nc-planet::before {
+    content: "\ea43";
 }
 
-.icon-settings::before {
-  content: "\ea45";
+.nc-refresh-69::before {
+    content: "\ea44";
 }
 
-.icon-simple-add::before {
-  content: "\ea46";
+.nc-ruler-pencil::before {
+    content: "\ea45";
 }
 
-.icon-simple-delete::before {
-  content: "\ea47";
+.nc-satisfied::before {
+    content: "\ea46";
 }
 
-.icon-simple-remove::before {
-  content: "\ea48";
+.nc-scissors::before {
+    content: "\ea47";
 }
 
-.icon-single-02::before {
-  content: "\ea49";
+.nc-send::before {
+    content: "\ea48";
 }
 
-.icon-single-copy-04::before {
-  content: "\ea4a";
+.nc-settings-gear-65::before {
+    content: "\ea49";
 }
 
-.icon-sound-wave::before {
-  content: "\ea4b";
+.nc-settings::before {
+    content: "\ea4a";
 }
 
-.icon-spaceship::before {
-  content: "\ea4c";
+.nc-share-66::before {
+    content: "\ea4b";
 }
 
-.icon-square-pin::before {
-  content: "\ea4d";
+.nc-shop::before {
+    content: "\ea4c";
 }
 
-.icon-support-17::before {
-  content: "\ea4e";
+.nc-simple-add::before {
+    content: "\ea4d";
 }
 
-.icon-tablet-2::before {
-  content: "\ea4f";
+.nc-simple-delete::before {
+    content: "\ea4e";
 }
 
-.icon-tag::before {
-  content: "\ea50";
+.nc-simple-remove::before {
+    content: "\ea4f";
 }
 
-.icon-tap-02::before {
-  content: "\ea51";
+.nc-single-02::before {
+    content: "\ea50";
 }
 
-.icon-tie-bow::before {
-  content: "\ea52";
+.nc-single-copy-04::before {
+    content: "\ea51";
 }
 
-.icon-time-alarm::before {
-  content: "\ea53";
+.nc-sound-wave::before {
+    content: "\ea52";
 }
 
-.icon-trash-simple::before {
-  content: "\ea54";
+.nc-spaceship::before {
+    content: "\ea53";
 }
 
-.icon-triangle-right-17::before {
-  content: "\ea55";
+.nc-sun-fog-29::before {
+    content: "\ea54";
 }
 
-.icon-trophy::before {
-  content: "\ea56";
+.nc-support-17::before {
+    content: "\ea55";
 }
 
-.icon-tv-2::before {
-  content: "\ea57";
+.nc-tablet-2::before {
+    content: "\ea56";
 }
 
-.icon-upload::before {
-  content: "\ea58";
+.nc-tag-content::before {
+    content: "\ea57";
 }
 
-.icon-user-run::before {
-  content: "\ea59";
+.nc-tap-01::before {
+    content: "\ea58";
 }
 
-.icon-vector::before {
-  content: "\ea5a";
+.nc-tie-bow::before {
+    content: "\ea59";
 }
 
-.icon-video-66::before {
-  content: "\ea5b";
+.nc-tile-56::before {
+    content: "\ea5a";
 }
 
-.icon-volume-98::before {
-  content: "\ea5c";
+.nc-time-alarm::before {
+    content: "\ea5b";
 }
 
-.icon-wallet-43::before {
-  content: "\ea5d";
+.nc-touch-id::before {
+    content: "\ea5c";
 }
 
-.icon-watch-time::before {
-  content: "\ea5e";
+.nc-trophy::before {
+    content: "\ea5d";
 }
 
-.icon-wifi::before {
-  content: "\ea5f";
+.nc-tv-2::before {
+    content: "\ea5e";
 }
 
-.icon-world::before {
-  content: "\ea60";
+.nc-umbrella-13::before {
+    content: "\ea5f";
 }
 
-.icon-zoom-split::before {
-  content: "\ea61";
+.nc-user-run::before {
+    content: "\ea60";
 }
 
-.icon-refresh-01::before {
-  content: "\ea62";
+.nc-vector::before {
+    content: "\ea61";
 }
 
-.icon-refresh-02::before {
-  content: "\ea63";
+.nc-watch-time::before {
+    content: "\ea62";
 }
 
-.icon-shape-star::before {
-  content: "\ea64";
+.nc-world-2::before {
+    content: "\ea63";
 }
 
-.icon-components::before {
-  content: "\ea65";
+.nc-zoom-split::before {
+    content: "\ea64";
 }
+
+
+/* all icon font classes list here */

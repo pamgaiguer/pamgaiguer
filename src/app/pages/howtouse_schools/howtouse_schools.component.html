@@ -1,0 +1,148 @@
+<div class="main howtouse-school">
+    <div class="section section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3>Como usar - Modelo das Escolas</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="card">
+                        <h3>Modelo de Dispersão do Coronavírus nas Escolas</h3>
+                        <h4>Como ele funciona?</h4>
+                        <p>
+                            Antes de iniciar as simulações o usuário pode modificar a densidade do espaço físico da escola (disperso - comprimido), a adoção das regras de distanciamento social e dos protocolos de segurança e higiene. Durante as simulações o usuário pode reiniciá-las o detê-las para modificar os parâmetros mencionados anteriormente.
+                        </p>
+                        <p>
+                            As pessoas são distribuídas e interagem aleatoriamente nesse mundo (o quadrado preto) estando em um dos três estados:
+                        </p>
+                        <ol type="a">
+                            <li>saudável mas suscetível a ser contaminado pelo vírus (verde)</li>
+                            <li>infectadas e transmitindo o vírus (vermelho)</li>
+                            <li>saudáveis e imunes (cinza)</li>
+                        </ol>
+                        <h4>A densidade populacional</h4>
+                        <p>
+                            A densidade Populacional afeta o quão frequente pessoas infectadas, imunes e suscetíveis podem entrar em contato umas com as outras. A densidade populacional pode ser modificada através do slider <em>espaço_físico_da_escola.</em>
+                        </p>
+                        <h4>Probabilidade de transmissão</h4>
+                        <p>
+                            Com que facilidade o vírus se espalha? Alguns vírus com os quais estamos familiarizados se espalham com muita facilidade. Alguns vírus se espalham com pouco contato todas as vezes. Outros (o vírus HIV por exemplo, que é responsável pela Aids) requerem contato significativo, muitas vezes repetidas, antes da transmissão do vírus. Neste modelo, o slider <em>protocolos_de_segurança_e_higiene</em>, permite configurar a probabilidade de transmissão do vírus em 39%, 41% e 43% dependendo se, respectivamente, a maioria, metade e minoria da população respeitam os protocolos de segurança e higiene.
+                        </p>
+                        <h4>Distanciamento Social</h4>
+                        <p>
+                            As regras de distanciamento social limitam as interações entre as pessoas ao suprimir sua movimentação a 70%, 50% e 30 % dependendo se  a maioria, metade e minoria da população respeitam essas regras. O slider <em>regras_de_distanciamento_social</em> modifica este parâmetro.
+                        </p>
+                        <h4>Período de  transmissão</h4>
+                        <p>
+                            Quanto tempo uma pessoa fica infectada antes de se recuperar ou morrer? Esse período de tempo é essencialmente a janela de oportunidade do vírus para transmissão para novos hospedeiros. Neste modelo, a duração da janela de transmissão é fixa em 10 dias, o equivalente a 14 dias sem contar o final de semana, em que as escolas não abrem. Este valor foi considerado já que a OMS estabeleceu que as pessoas infectadas deveriam permanecer isoladas durante 14 dias.
+                        </p>
+                        <h4>Grau de imunidade</h4>
+                        <p>
+                            Se uma pessoa for infectada  e se recuperar, o quão imune ela estará do vírus? 
+                            Para algumas doenças a imunidade dura a vida inteira e é garantida, mas, em alguns casos, a imunidade desaparece com o tempo e ele pode não ser absolutamente segura. No caso do coronavírus não sabemos exatamente qual é o tempo de duração da imunidade. Após 6 meses de pandemia ainda não é comum casos de reinfecção confirmados (primeiro caso reportado no Brasil a pouco). Neste caso mantivemos como no modelo original do Netlogo,  o período de imunidade como sendo um ano.
+                        </p>
+                        <h4>Interações durante o período escolar </h4>
+                        <p>
+                            Considerou-se três interações durante o período letivo (um dia), pois durante a entrada, o recesso e a saída dos estudantes acontecem a maioria das interações entre eles.  
+                        </p>
+                        <h4>Rotatividade da população</h4>
+                        <p>
+                            Todos os novos indivíduos que nascerem, substituindo os que morrerem, serão saudáveis e suscetíveis. Nesse modelo as pessoas morrem por infecção ou de velhice. 
+                        </p>
+                        <h4>
+                            Parâmetros constantes
+                        </h4>
+                        <p>
+                            Quatro parâmetros importantes deste modelo são definidos como constantes no código (consulte o procedimento `inicializar-constantes`). Eles podem ser expostos como sliders, se desejado. O tempo de vida das pessoas (75 anos expectativa de vida no Brasil em 2020), a capacidade máxima de pessoas na grade é de 400, a chance de recuperação uma vez contraído o vírus é 99.3%, o número inicial de pessoas infectadas é 1. 
+                            <br>
+                            No  modelo um agente infectado pelo vírus  é reintroduzido a cada 30 rodadas (10 dias letivos), isto torna o ambiente do modelo aberto (antes era fechado) e aproxima o modelo à realidade de surgimento de novos surtos. 
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>COMO USAR O MD CORONA</h3>
+                        <p>O slider <em>espaço_físico_das_pessoas</em> define a densidade das escolas, onde as pessoas (35 a 400) serão aleatoriamente distribuídas no ambiente.</p>
+                        <p>O slider <em>regras_de_distanciamento_social</em> determina o número de pessoas que estarão aleatoriamente paradas no ambiente. </p>
+                        <p>O slider <em>protocolos_de_segurança_e_higiene</em> determina a probabilidade de transmissão do vírus quando uma pessoa infectada e outra suscetível ocupar o mesmo sítio no ambiente. </p>
+                        <p>O botão <em>Resetar</em> recomeça os gráficos e distribui aleatoriamente o número de pessoas no ambiente. Todas as pessoas, exceto 1, são consideradas saudáveis e suscetíveis ao vírus (pessoas verdes).  O programa fixa 1 pessoa inicialmente infectada (pessoa vermelha). Todos com idades distribuídas aleatoriamente. O botão Iniciar/Parar inicia a simulação e os gráficos e também para a simulação.</p>
+                        <p>O botão <em>Focar_em_uma_pessoa</em> permite focalizar no deslocamento e as interações de somente uma pessoa.</p>
+                        <p>Quatro monitores de saída mostram o número de dias electivos, porcentagem de infectados por dia, porcentagem de imunes por dia e porcentagem total de infectados. O gráfico mostra o número de pessoas infectadas (vermelho) e imunes (cinza). O eixo x do gráfico corresponde às interações realizadas por dia e o eixo y representa o número de pessoas (infectadas ou imunes dependendo da curva vermelha ou azul respectivamente).</p>
+                        
+                        <figure>
+                            <img src="./assets/img/simulador_escolas.png" class="figure-img img-fluid">
+                            <figcaption class="text-center">Figura 1: imagem do Simulador MD corona nas Escolas </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./assets/img/escola_simulador.jpg" alt="Escola dispersa ou comprimida" class="img-fluid">
+                            <figcaption class="text-center">Figura 2: Escola dispersa ou comprimida </figcaption>
+                        </figure>
+                        <hr>
+                        <h4>Modelos relacionados</h4>
+                        <ul class="list-unstyled">
+                            <li>HIV</li>
+                            <li>Virus em uma rede</li>
+                        </ul>
+                        
+                        <h4>Créditos e referências</h4>
+                        <p>
+                            Este modelo pode mostrar uma visualização alternativa usando círculos para representar as pessoas. Ele usa técnicas de visualização conforme recomendado no artigo:
+                            Kornhauser, D., Wilensky, U., & Rand, W. (2009). Design guidelines for agent based model visualization. Journal of Artificial Societies and Social Simulation, JASSS, 12(2), 1.
+                            
+                        </p>
+                        <h4>
+                            Como Citar
+                        </h4>
+                        <p>
+                            Se você mencionar este modelo ou o software NetLogo numa publicação, pedimos para que inclua as citações abaixo:
+                        </p>
+                        <p>Para o modelo Virus:</p>
+                        <ul>
+                            <li>
+                                Wilensky, U. (1998).  NetLogo Virus model.  http://ccl.northwestern.edu/netlogo/models/Virus.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+                            </li>
+                        </ul>
+                        <p>
+                            Para o modelo MD Corona:
+                        </p>
+                        <ul>
+                            <li>Guedes Pinto, José Paulo; Magalhães, Patrícia; Santos Carlos Silva. (2020). Modelo de Dispersão Comunitária Coronavírus (MD Corona), Universidade Federal do ABC, São Bernardo do Campo, Brasil.</li>
+                        </ul>
+                        <p>
+                            Por favor cite o software NetLogo como:
+                        </p>
+                        <ul>
+                            <li>
+                                Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Copyright and License</h3>
+                        <p>Copyright 2020 José Paulo Guedes Pinto, Patrícia Camargo Magalhães, Carlos da Silva dos Santos </p>
+                        <p>![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)</p>
+                        
+                        <p>Copyright 1998 Uri Wilensky.</p>
+                        
+                        <p>![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)</p>
+                        
+                        <p>Esse trabalho está sob a licença Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. Para ver uma cópia dessa licença visite: https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.</p>
+                        
+                        <p>Licenças comercial também estão disponíveis. Para indagar sobre isso, favor contactar Uri Wilensky at uri@northwestern.edu.</p>
+                        
+                        <p>O modelo MD Corona foi criado para gerar dados para o working paper "Simulando a evolução da transmissão comunitária do coronavírus através do Modelo M D Corona." de autoria de José Paulo Guedes Pinto, Patrícia Magalhães e Carlos da Silva Santos. 2020.</p>
+                        
+                        <p>This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML). The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.</p>
+                        
+                        <p>This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001. (1998-2020)</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

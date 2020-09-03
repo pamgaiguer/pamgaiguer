@@ -3,46 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blk-design-system-angular": {
+    "pamgaiguer": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blk-design-system-angular",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "polyfills": "src/polyfills.ts",
+            "aot": false,
             "assets": [
+              "src/assets",
               "src/favicon.ico",
-              "src/assets"
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "src/assets/sass/acaocovid.scss",
               "src/assets/css/nucleo-icons.css",
-              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "src/assets/scss/blk-design-system.scss",
-              "src/assets/scss/custom.scss"
+              "src/assets/sass/custom.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js"
+            ]
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -52,47 +45,64 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
+              "fileReplacements": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": false,
+              "ngswConfigPath": "ngsw-config.json"
+            },
+            "pt": {
+              "aot": true,
+              "outputPath": "dist/",
+              "i18nFile": "src/locale/messages.pt.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pt",
+              "i18nMissingTranslation": "error"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "pamgaiguer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blk-design-system-angular:build:production"
+              "browserTarget": "pamgaiguer:build:production"
+            },
+            "pt": {
+              "browserTarget": "pamgaiguer:build:pt"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "pamgaiguer:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
+            "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
+            "scripts": [],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/sass/acaocovid.scss",
+              "src/assets/css/demo.css",
+              "src/assets/css/nucleo-icons.css",
               "src/styles.scss"
             ],
-            "scripts": [],
             "assets": [
+              "src/assets",
               "src/favicon.ico",
-              "src/assets"
+              "src/manifest.webmanifest"
             ]
           }
         },
@@ -103,43 +113,49 @@
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },
-    "blk-design-system-angular-e2e": {
-      "root": "e2e/",
+    "pamgaiguer-e2e": {
+      "root": "e2e",
+      "sourceRoot": "e2e",
       "projectType": "application",
-      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blk-design-system-angular:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "blk-design-system-angular:serve:production"
-            }
+            "protractorConfig": "./protractor.conf.js",
+            "devServerTarget": "pamgaiguer:serve"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": [
+              "e2e/tsconfig.e2e.json"
+            ],
+            "exclude": []
           }
         }
       }
     }
   },
-  "defaultProject": "blk-design-system-angular",
+  "defaultProject": "pamgaiguer",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "app",
+      "styleext": "scss"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "app"
+    }
+  },
   "cli": {
     "analytics": false
   }

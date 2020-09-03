@@ -1,0 +1,34 @@
+<div class="main publicity">
+    <div class="section section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3>Na Mídia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="card">
+                        <div class="list-group">
+                            <div  *ngFor="let midia of allpublicity; let i = index">
+                                <a href="{{midia.link}}" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 publicity-title">{{midia.fonte}}</h5>
+                                        <small>{{midia.data}}</small>
+                                    </div>
+                                    <p class="mb-1">
+                                        {{midia.titulo}}
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
