@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/home']"><img class="logo-web" src="./assets/img/main_logo.jpg" alt=""></a>
+            <a class="navbar-brand" [routerLink]="['/home']"><span class="logo-navbar">Pam Gaiguer</span></a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -10,52 +10,12 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Simulador</a>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                            <a class="dropdown-item" [routerLink]="['/escolas']">Simulador das Escolas</a>
-                            <a class="dropdown-item" [routerLink]="['/howtouse_schools']">Info Simulador das Escolas</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" [routerLink]="['/dash']">Simulador Territórios</a>
-                          <a class="dropdown-item" [routerLink]="['/howtouse']">Como Usar</a>
-                          <a class="dropdown-item" [routerLink]="['/methodology']">Metodologia</a>
-
-                          
-                        </div>
-                      </div>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/howtoact']" routerLinkActive="active">Who am I?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/howtoact']" routerLinkActive="active">Como Agir?</a>
+                    <a class="nav-link" [routerLink]="['/statistics']" routerLinkActive="active">Resume</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Estudos</a>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                          <a class="dropdown-item" [routerLink]="['/copacabana']">Copacabana</a>
-                          <a class="dropdown-item" [routerLink]="['/fortaleza']">Fortaleza</a>
-                          <a class="dropdown-item" [routerLink]="['/saopaulo']">São Paulo</a>
-                          <a class="dropdown-item" [routerLink]="['/curitiba']">Curitiba</a>
-                        </div>
-                      </div>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/statistics']" routerLinkActive="active">Estatísticas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/publications']" routerLinkActive="active">Publicações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="active">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/publicity']" routerLinkActive="active">Na Mídia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/partners']" routerLinkActive="active">Parceiros</a>
-                </li>
-
             </ul>
         </div>
     </div>

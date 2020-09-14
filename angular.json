@@ -25,7 +25,7 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
-              "src/assets/sass/acaocovid.scss",
+              "src/assets/sass/pamgaiguer.scss",
               "src/assets/css/nucleo-icons.css",
               "src/assets/sass/custom.scss"
             ],

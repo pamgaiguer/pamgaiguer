@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { publicity } from '../publicity/publicity'
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 @Component({
@@ -9,8 +8,6 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 })
 export class HomeComponent implements OnInit {
   
-  allpublicity = publicity;
-
   constructor() { }
 
   ngOnInit(): void {

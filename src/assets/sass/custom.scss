@@ -1,36 +1,28 @@
 //big fixes of the template
-//main-red: #EB392C
-$red-main:                  rgba(#EB392C, .98);
-$red-light:                  rgba(#F73C2F, .98);
-$red-dark:                  rgba(#AB2A20, .98);
+//main-orange: #EB392C
+$orange-main: #F15921;
+$orange-light: #F99516;
+$orange-dark: #DB6614;
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Questrial','Lato',Arial,sans-serif;
+
 }
 
 /*html tags*/
 body{
+    font-family: 'Questrial','Lato',Arial,sans-serif;
+
     a{
         font-weight: 700;
-        color: $red-main;
+        color: $orange-main;
         
         &:hover, &:focus{
             text-decoration: underline;
-            color: $red-main;
+            color: $orange-main;
             cursor:hover;
         }
-    }
-}
-pdf-viewer {
-    display: block;
-    height: 40vh;
-}
-.control-pdf-buttons{
-    text-align: center;
-    .pdf-button{
-        border-radius: 0;
-        background-color: $red-main;
-        border-color: $red-main;
     }
 }
 button{
@@ -57,7 +49,7 @@ textarea{
 }
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, 
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:focus{
-    background-color: $red-main;
+    background-color: $orange-main;
     color: white;
     font-weight: 400;
 }
@@ -72,14 +64,14 @@ textarea{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
+    background-color: #282828;
     margin-bottom: 10px;
     border: 0 none;
     padding: 20px;
     
     h4, h3, h5{
         font-weight: 600;
-        color: $red-main;
+        color: $orange-main;
         // text-transform: uppercase;
         margin-bottom: 15px;
         margin-top: 0px;
@@ -94,9 +86,6 @@ textarea{
 .navbar{
     .navbar-brand{
         padding: 5px;
-        .logo-web{
-            height: 9vh;
-        }
     }
     .navbar-nav{
         .nav-item{
@@ -122,274 +111,21 @@ textarea{
     }
 }
 .footer{
-    .logo-apoio{
-        height: 10vh;
-    }
-    .logo-premios{
-        height: 10vh;
-        width: 120px;
-        object-fit: cover;
-    }
-    .credits, .footer-nav {
-        line-height: 120px;
-    }
     .copyright {
         margin: 15px 15px;
     }
 }
-/* pages */
-.main-header{
-    margin-bottom: 0px;
-    padding: 0 0 25px 0;
-    
-    h3{
-        letter-spacing: 1px;
-        font-weight: 700;
-        font-size: 32px;
-        text-transform: uppercase;
-        margin-top: 50px;
-    }
+.cursive{
+    font-family: 'Dancing Script', cursive;
+    text-transform: none;
+    color: $orange-main !important;
+    text-shadow: 1px 1px 1px rgba(60, 60, 60, 0.7);
+    font-size: 42px;
 }
-
-.home{
-    .section{
-        margin-top: 25px;
-    }
-    .card{
-        .home-title{
-            color: black;
-            border-left: 8px solid black;
-            padding-left: 10px;
-        }
-        .border-color-red{
-            border-left: 8px solid #e83632;
-        }
-    }
-    .main-header-home{
-        margin-top: 20px;
-        background-image: url('../img//home/header_wide.jpg');
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 45vh;
-        
-        p{
-            text-indent: -1000px;
-        }
-    }
-    .media{
-        .home-media-img{
-            width: 64px;
-            height: 64px;
-        }
-        .media-body{
-            h5{
-                font-weight: 400;
-            }
-        }
-    }
-}
-.copacabana, .fortaleza, .saopaulo, .curitiba{
-    p{
-        text-align: justify;
-    }
-    img{
-        text-align: center;
-    }
-    .table1{
-        caption{
-            padding-bottom: 0;
-            padding-top: 0;
-        }
-        thead tr th,tbody tr td, tbody tr th{
-            text-align: center;
-        }
-    }
-    .references{
-        li{
-            margin: 15px 0;
-        }
-    }
-    .indice, .glossario{
-        li{
-            font-weight: 700;
-            margin: 15px 0;
-            text-align: justify;
-        }
-    }
-}
-.dash, .dash-schools{
-    .dash-spacer{
-        margin-bottom: 10px;
-        padding: 0 0 25px 0;
-    }
-    .embed-responsive iframe {
-        left: 1vw !important;
-        //     width: 95% !important;
-    }
-    .simulador{
-        height: 75vh;
-        overflow: hidden;
-    }
-    .card{
-        overflow-y: scroll;
-        overflow-x: auto;
-        table{
-            font-size: 12px;
-        }
-    }
-    .logo-apoio {
-        height: 7vh;
-    }
-}
-.methodology{
-    .methodology-img{
-        width: 80%;
-    }
-    .methodology-vertical{
-        height: 100vh;
-    }
-    .equation{
-        font-weight: 900;
-    }
-}
-.aboutus{
-    .section-title{
-        color: $red-main;
-        font-weight: 600;
-        font-size: 17px;
-        text-transform: uppercase;
-    }
-    .researcher{
-        text-transform: uppercase;
-    }
-    .teamlist{
-        p{
-            text-align: justify;
-        }
-    }
-}
-.howtoact{
-    p{
-        text-align:justify;
-    }
-    ol > li{
-        margin: 10px 0;
-    }
-    .pyramid{
-        width: 40vw;
-    }
-}
-.statistics{
-    .accordion>.card>.card-header{
-        padding: 0;
-        background-color: transparent;
-        border-bottom: none;
-        
-        .btn.btn-link{
-            padding: 0;
-            
-            h4{
-                margin-bottom: 0;
-            }
-        }
-    }
-    #riodejaneiro, #fortaleza, #saopaulo, #brazil, #curitiba{
-        width: 70vw;
-        height: 1000px;
-    }
-}
-.publicity{
-    .publicity-title{
-        display: inline;
-        color: $red-main;
-        font-weight: 600;
-        font-size: 15px;
-    }
-    ul > li > a > p{
-        font-size: 12px;
-    }
-    .list-unstyled > li{
-        margin: 10px 0;
-    }
-}
-.article-note{
-    background-color: white;
-    padding: 5px 25px;
-    
-    a {
-        word-wrap: break-word; 
-        max-width:300px;
-    }
-    
-    h4{
-        font-weight: 400;
-        margin: 15px 0;
-    }
-    p{
-        margin: 20px 0;
-        text-align: justify;
-    }
-    pdf-viewer {
-        display: block;
-        height: 50vh;
-    }
-    .control-pdf-buttons{
-        text-align: center;
-        
-        .pdf-buttons-paginator{
-            display: block;
-            border:1px solid #f0f;
-        }
-        .pdf-button{
-            border-radius: 0;
-            background-color: $red-main;
-            border-color: $red-main;
-        }
-    }
-}
-.howtouse{
-    text-align: justify;
-    
-    a{
-        word-wrap: break-word; 
-        max-width:300px;
-    }
-    
-    .card h4, .card h3{
-        font-weight: 600;
-        color: $red-main;
-        // text-transform: uppercase;
-        margin-bottom: 10px;
-        margin-top: 0px;
-    }
-    strong{
-        font-weight: 500;
-        color: $red-dark;
-    }
-    
-}
-.publications{
-    .list-group-item {
-        border: none;
-        margin-bottom: 5px;
-        
-        &-action{
-            color: #66615b;
-        }
-        
-        &:active, &.active{
-            background-color: $red-main;
-            color: white;
-        }
-        
-        &:first-child, &:last-child {
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-    }
+.logo-navbar{
+    color: $orange-main !important;
+    font-family: 'Questrial','Lato',Arial,sans-serif;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 991px){
@@ -412,19 +148,6 @@ textarea{
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar{
-        .navbar-brand{
-            .logo-web{
-                height: 8vh;
-                margin-left: 11px;
-            }
-        }
-    }
-    .home{
-        .main-header{
-            margin-top: 10px;
-        }
-    }
     .main-header{
         padding: 10px 0;
         h3{
@@ -432,38 +155,4 @@ textarea{
             margin-top: 25px;
         }
     }
-    .publications{
-        .list-group{
-            margin-bottom: 15px;
-        }
-    }
-    .methodology{
-        .methodology-vertical{
-            height: 100%;
-            width: 95%;
-        }
-        .methodology-img{
-            width: 90%;
-        }
-    }
-    .statistics{
-        #riodejaneiro, #fortaleza{
-            width: 75vw;
-            height: 280px;
-        }
-    }
-    .howtoact .pyramid {
-        width: 85vw;
-    }
-    .footer{
-        .logo-apoio {
-            height: 7vh;
-        }
-        .logo-premios{
-            height: 7vhvh;
-            width: 90px;
-        }
-    }
-    
 }
-

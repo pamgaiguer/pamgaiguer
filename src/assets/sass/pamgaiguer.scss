@@ -1,0 +1,40 @@
+@import "pamgaiguer/variables";
+@import "pamgaiguer/mixins";
+
+@import "pamgaiguer/typography";
+
+// Core CSS
+@import "pamgaiguer/misc";
+@import "pamgaiguer/buttons";
+@import "pamgaiguer/inputs";
+@import "pamgaiguer/progress-bars";
+@import "pamgaiguer/sliders";
+@import "pamgaiguer/alerts";
+@import "pamgaiguer/labels";
+@import "pamgaiguer/tooltips-and-popovers";
+@import "pamgaiguer/sections";
+@import "pamgaiguer/checkbox-radio";
+@import "pamgaiguer/navbars";
+@import "pamgaiguer/images";
+@import "pamgaiguer/cards";
+@import "pamgaiguer/footers";
+
+
+// Bootstrap Switch
+@import "pamgaiguer/bootstrap-switch";
+
+// Fancy Stuff
+@import "pamgaiguer/dropdown";
+//
+// icons
+@import "pamgaiguer/icons";
+//
+@import "pamgaiguer/tabs-navs-pagination";
+@import "pamgaiguer/collapse";
+@import "pamgaiguer/carousel";
+@import "pamgaiguer/modal";
+//
+@import "pamgaiguer/responsive";
+@import "pamgaiguer/plugins/datetimepicker";
+@import "pamgaiguer/social-buttons";
+@import "pamgaiguer/examples";
