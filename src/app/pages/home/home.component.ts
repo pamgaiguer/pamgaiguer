@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { portfolio } from './portfolio';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,8 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  portfolio = portfolio;
   
   constructor() { }
 

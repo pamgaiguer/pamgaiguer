@@ -11,10 +11,10 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/howtoact']" routerLinkActive="active">Who am I?</a>
+                    <a class="nav-link" [routerLink] [fragment]="'whoami'">Who am I?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/statistics']" routerLinkActive="active">Resume</a>
+                    <a class="nav-link" [routerLink] [fragment]="'portfolio'">Portfolio</a>
                 </li>
             </ul>
         </div>

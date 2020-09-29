@@ -1,19 +1,78 @@
 <div class="main home">
-    <div class="section section-gray">
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                    <div class="card">
-                <div class="container">
-
+    <div class="row">
+        <div class="bg-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="inner">
+                        <h1 class="cursive">Pam Gaiguer</h1>
+                        <h4>Front End Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <cookie-law>
+        Uso "cookies" (pequenos arquivos que identificam o seu aparelho) para melhorar a sua experiência no nosso site. Mais informações na nossa política de privacidade.
+    </cookie-law>
+    <div class="section section-gray" id="whoami">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="whoami">    
+                        <h1>Who Am I?</h1>
+                        <p>
+                            I'm Pam, front-end developer and in my free time I'm a musician as well 
+                        </p>
+                        <p>
+                            Almost 10 years of experience in IT (BPMN, Project Management, Gamification) and 7y in Front-End with focus in UX and UI
+                        </p>
+                        <p><small>"You're a fuck**ng star! Don't let anybody tell that you're not!"</small></p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="whoami">
                         <figure>
-                            <img src="./assets/img/ikki.jpg" class="text-center" alt="">
+                            <img src="../../../assets/img/pam_profile.jpg" class="pam-profile" alt="">
+                            
                         </figure>
                     </div>
                 </div>
             </div>
         </div>
-        <cookie-law>
-            Uso "cookies" (pequenos arquivos que identificam o seu aparelho) para melhorar a sua experiência no nosso site. Mais informações na nossa política de privacidade.
-        </cookie-law>
+    </div>
+    <div class="section section-black portfolio" id="portfolio">
+        <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                    <h1>Portfolio</h1>
+                    <p><small>Note: some of the websites could be offline, so, I'm sorry, but I don't have control upon this</small></p>
+                    <ul class="list-unstyled portf-list">
+                        <li *ngFor="let port of portfolio; let i = index">
+                            <figure>
+                                <img src="{{port.img}}" alt="" class="img-fluid">
+                                <figcaption>
+                                    {{port.nome}}
+                                    <br>
+                                    <a href="{{port.url}}" target="_blank">Visit website</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-gray resume-thanks">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h1>Thank you</h1>
+                    <p>Here it's my resume for download: <a href="../../../assets/PamGaiguerResume.pdf" target="_blank">Download</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
