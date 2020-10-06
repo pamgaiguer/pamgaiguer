@@ -1,11 +1,11 @@
 export const portfolio =[ 
     {
-        nome: "Ação Covid 19 - Project About Covid19",
+        nome: "Ação Covid 19 - Covid19 webpage",
         img: "../../../assets/img/portfolio/015-acaocovid.png",
         url: "http://www.acaocovid19.org"
     },
     {
-        nome: "Pão de Açúcar - E-commerce of a chain of supermarkets",
+        nome: "Pão de Açúcar - Supermarket e-commerce webpage",
         img: "../../../assets/img/portfolio/014-paodeacucar.png",
         url: "http://www.paodeacucar.com"
     },
@@ -56,12 +56,12 @@ export const portfolio =[
         url: "#"
     },
     {
-        nome: "Seiki Alimentos - Food suplier",
+        nome: "Seiki Alimentos - Food supplier",
         img: "../../../assets/img/portfolio/009-seiki.png",
         url: "http://seikialimentos.com.br/"
     },
     {
-        nome: "Alpha Institute - Integrate Medicine",
+        nome: "Alpha Institute - Integrated Medicine Web Site",
         img: "../../../assets/img/portfolio/010-alpha.png",
         url: "http://www.institutoalpha.com.br/"
     },
