@@ -18,10 +18,11 @@ const routes: Routes =[
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes,{
-      useHash: false,
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled'
-    })
+    useHash: false,
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    relativeLinkResolution: 'legacy'
+})
   ],
   exports: [
   ],
