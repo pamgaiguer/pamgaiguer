@@ -2,7 +2,9 @@
 
 My background is:
 
+
 - 👩‍ Frontend development with Angular (specialist), which includes HTML, CSS, SCSS, Typescript and Javascript.
+
 
 
 - 🔭 I’m currently working @ **Sonic Healthcare** in Brisbane/Australia as a **FrontEnd Dev**.
@@ -13,6 +15,8 @@ My background is:
 - 💬 Ask me about **Music**, FrontEnd Dev, UI/UX, Bartending, Travel, Brazil and Australia!
 - 📫 How to reach me: [Twitter](https://twitter.com/pamgaiguer) or [LinkedIn](https://www.linkedin.com/in/pamellagaiguer/)
 - 😄 Pronouns: She/Her
+
+
 
 
 Fun facts: 
