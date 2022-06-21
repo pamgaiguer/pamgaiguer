@@ -3,12 +3,12 @@
 My background is:
 
 
-- 👩‍ Frontend development with Angular (specialist), which includes HTML, CSS, SCSS, Typescript and Javascript.
+- 👩🏻‍💻 Frontend development with Angular (specialist), which includes HTML, CSS, SCSS, Typescript and Javascript.
 
 
 
-- 🔭 I’m currently working @ **Sonic Healthcare** in Brisbane/Australia as a **FrontEnd Dev**.
-- 🌱 I’m currently learning :  React (terrible syntax, but the market likes it lol)
+- 👩🏻‍💻 Currently working @ **Sonic Healthcare** in Brisbane/QLD/Australia as a **FrontEnd Dev**.
+- 👩🏻‍💻 Currently learning :  React (terrible syntax, but the market likes it lol)
 - 🎤 Playing bass for @AlexEdwardsBand in Brisbane/QLD!
  <!-- - 👯 I’m looking to collaborate on ... -->
  <!-- - 🤔 I’m looking for help with ... -->
