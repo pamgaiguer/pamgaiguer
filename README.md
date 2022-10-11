@@ -7,9 +7,9 @@ My background is:
 
 
 
-- 👩🏻‍💻 Currently working @ **Sonic Healthcare** in Brisbane/QLD/Australia as a **FrontEnd Dev**.
-- 👩🏻‍💻 Currently learning :  React (terrible syntax, but the market likes it lol)
-- 🎤 Playing bass for @AlexEdwardsBand in Brisbane/QLD!
+<!-- - 👩🏻‍💻 Currently working @ **Sonic Healthcare** in Brisbane/QLD/Australia as a **FrontEnd Dev**. -->
+- 👩🏻‍💻 Currently learning :  React (terrible syntax, but the market likes it lol) 
+- 🎤 Writing the new songs for @AurosBand!
  <!-- - 👯 I’m looking to collaborate on ... -->
  <!-- - 🤔 I’m looking for help with ... -->
 - 💬 Ask me about **Music**, FrontEnd Dev, UI/UX, Bartending, Travel, Brazil and Australia!
