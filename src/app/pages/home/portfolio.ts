@@ -1,5 +1,17 @@
 export const portfolio = [
   {
+    nome: 'Norsrsken Eventos',
+    img: '../../../assets/img/portfolio/019-norrksken.png',
+    url: 'https://norrskeneventos.com.br/',
+    location: 'Sao Paulo/Brazil',
+  },
+  {
+    nome: 'Agência Galharufa - Casting Model Agency - New Version',
+    img: '../../../assets/img/portfolio/018-galharufa.png',
+    url: 'http://www.agenciagalharufa.com.br',
+    location: 'Sao Paulo/Brazil',
+  },
+  {
     nome: 'Agência Galharufa - Casting Model Agency',
     img: '../../../assets/img/portfolio/017-galharufa.png',
     url: 'http://www.agenciagalharufa.com.br',
@@ -95,4 +107,4 @@ export const portfolio = [
     url: 'https://foccoturismo.com.br/',
     location: 'Sao Paulo/Brazil',
   },
-];
+]
