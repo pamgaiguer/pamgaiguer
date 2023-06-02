@@ -1,35 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app.routing';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { AppRoutingModule } from './app.routing'
 
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { ComponentsModule } from './components/components.module';
-import { PagesModule } from './pages/pages.module';
-
-import * as $ from "jquery";
+import { AppComponent } from './app.component'
+import { NavbarComponent } from './shared/navbar/navbar.component'
+import { FooterComponent } from './shared/footer/footer.component'
+import { PagesModule } from './pages/pages.module'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    FormsModule,
-    RouterModule,
-    ComponentsModule,
-    PagesModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, NavbarComponent, FooterComponent],
+  imports: [BrowserModule, RouterModule, PagesModule, AppRoutingModule],
   exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
