@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve",
     "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save",
-    "build:prod": "ng build --output-path dist"
+    "build:prod": "ng build --output-path public"
   },
   "dependencies": {
     "@angular/animations": "^16.0.4",
