@@ -3,7 +3,6 @@
 - 👩🏻‍💻 FrontEnd development with Angular and React, which includes HTML, CSS, SCSS, Typescript and Javascript.
 - 👩🏻‍💻 Currently working @ **Xgen** in Sao Paulo/SP/Brazil as a **Senior Angular FrontEnd Dev**.
 - 🎤 Writing the new songs for @AurosBand!
-- 👯 Working on a few projects with my mate [@araujo88](https://github.com/araujo88) as for instance the new website for a model agency in Brazil (link soon available).
 - 💬 Ask me about **Music**, FrontEnd Dev, UI/UX, Bartending, Travel, Brazil and Australia!
 - 📫 How to reach me: [Twitter](https://twitter.com/pamgaiguer) or [LinkedIn](https://www.linkedin.com/in/pamellagaiguer/)
 - 😄 Pronouns: She/Her
