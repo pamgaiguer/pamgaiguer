@@ -10,6 +10,20 @@ jobs:
     build_and_deploy:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout code syntax
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "16"
+
+            - name: Install AngularCli
+              run: npm install -g @angular/cli
+
+            - name: Install dependencies
+              uses: npm ci
+
             - uses: actions/checkout@v3
             - run: npm run build:prod
             - uses: FirebaseExtended/action-hosting-deploy@v0
