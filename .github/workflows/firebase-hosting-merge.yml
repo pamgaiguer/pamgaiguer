@@ -18,14 +18,13 @@ jobs:
               with:
                   node-version: "20"
 
-            - name: Install AngularCli
-              run: npm install -g @angular/cli
-
-            - name: Install dependencies
-              run: npm install
+            - name: Install AngularCli and dependencies
+              run: |
+                  npm install -g @angular/cli
+                  npm install
 
             - uses: actions/checkout@v3
-            - run: npm run build:prod
+            - run: npm run build
 
             - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
