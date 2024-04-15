@@ -1,6 +1,6 @@
 (self["webpackChunkpamgaiguer"] = self["webpackChunkpamgaiguer"] || []).push([["main"],{
 
-/***/ 5041:
+/***/ 6401:
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
   \**********************************/
@@ -9,16 +9,15 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
+/* harmony export */   AppComponent: () => (/* binding */ AppComponent)
 /* harmony export */ });
 /* harmony import */ var _app_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component.html?ngResource */ 3383);
 /* harmony import */ var _app_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component.scss?ngResource */ 9595);
 /* harmony import */ var _app_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_app_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 6679);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 6477);
-/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ 4696);
-var _class;
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ 833);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -36,7 +35,7 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 
 
 
-let AppComponent = (_class = class AppComponent {
+let AppComponent = class AppComponent {
   constructor(router, location) {
     this.router = router;
     this.location = location;
@@ -74,20 +73,22 @@ let AppComponent = (_class = class AppComponent {
       return true;
     }
   }
-}, _class.ctorParameters = () => [{
-  type: _angular_router__WEBPACK_IMPORTED_MODULE_3__.Router
-}, {
-  type: _angular_common__WEBPACK_IMPORTED_MODULE_4__.Location,
-  decorators: [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_5__.Inject,
-    args: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.DOCUMENT]
-  }]
-}], _class.propDecorators = {
-  navbar: [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_5__.ViewChild,
-    args: [_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__.NavbarComponent]
-  }]
-}, _class);
+  static #_ = this.ctorParameters = () => [{
+    type: _angular_router__WEBPACK_IMPORTED_MODULE_3__.Router
+  }, {
+    type: _angular_common__WEBPACK_IMPORTED_MODULE_4__.Location,
+    decorators: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_5__.Inject,
+      args: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.DOCUMENT]
+    }]
+  }];
+  static #_2 = this.propDecorators = {
+    navbar: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_5__.ViewChild,
+      args: [_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__.NavbarComponent]
+    }]
+  };
+};
 AppComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.Component)({
   selector: 'app-root',
   template: _app_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
@@ -97,7 +98,7 @@ AppComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.Compone
 
 /***/ }),
 
-/***/ 6747:
+/***/ 8629:
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
   \*******************************/
@@ -106,16 +107,16 @@ AppComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.Compone
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppModule": () => (/* binding */ AppModule)
+/* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 6679);
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.routing */ 6738);
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
-/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ 4696);
-/* harmony import */ var _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/footer/footer.component */ 5227);
-/* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/pages.module */ 8950);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser */ 6480);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.routing */ 34);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 6401);
+/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ 833);
+/* harmony import */ var _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/footer/footer.component */ 1777);
+/* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/pages.module */ 9238);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -143,7 +144,7 @@ AppModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.NgModule)(
 
 /***/ }),
 
-/***/ 6738:
+/***/ 34:
 /*!********************************!*\
   !*** ./src/app/app.routing.ts ***!
   \********************************/
@@ -152,13 +153,13 @@ AppModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.NgModule)(
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
+/* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6477);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 6679);
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/home/home.component */ 5245);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 6480);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/home/home.component */ 424);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -192,7 +193,7 @@ AppRoutingModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgM
 
 /***/ }),
 
-/***/ 5245:
+/***/ 424:
 /*!**********************************************!*\
   !*** ./src/app/pages/home/home.component.ts ***!
   \**********************************************/
@@ -201,14 +202,13 @@ AppRoutingModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgM
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HomeComponent": () => (/* binding */ HomeComponent)
+/* harmony export */   HomeComponent: () => (/* binding */ HomeComponent)
 /* harmony export */ });
 /* harmony import */ var _home_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.component.html?ngResource */ 8916);
 /* harmony import */ var _home_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.component.scss?ngResource */ 6444);
 /* harmony import */ var _home_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _portfolio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./portfolio */ 6100);
-var _class;
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _portfolio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./portfolio */ 2319);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -223,7 +223,7 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 
 
 
-let HomeComponent = (_class = class HomeComponent {
+let HomeComponent = class HomeComponent {
   constructor() {
     this.portfolio = _portfolio__WEBPACK_IMPORTED_MODULE_2__.portfolio;
   }
@@ -233,7 +233,8 @@ let HomeComponent = (_class = class HomeComponent {
       // Code that uses the global object
     }
   }
-}, _class.ctorParameters = () => [], _class);
+  static #_ = this.ctorParameters = () => [];
+};
 HomeComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
   selector: 'app-home',
   template: _home_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
@@ -243,7 +244,7 @@ HomeComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Compon
 
 /***/ }),
 
-/***/ 6100:
+/***/ 2319:
 /*!*****************************************!*\
   !*** ./src/app/pages/home/portfolio.ts ***!
   \*****************************************/
@@ -252,9 +253,24 @@ HomeComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Compon
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "portfolio": () => (/* binding */ portfolio)
+/* harmony export */   portfolio: () => (/* binding */ portfolio)
 /* harmony export */ });
 const portfolio = [{
+  nome: 'Erick Lisboa Design',
+  img: '../../../assets/img/portfolio/022-erick-designer.png',
+  url: 'https://lisboaerk.design/',
+  location: 'Sao Paulo/Brazil'
+}, {
+  nome: 'Colégio IENEC',
+  img: '../../../assets/img/portfolio/021-colegioienec.png',
+  url: 'http://www.colegioienec.com',
+  location: 'Mogi das Cruzes - SP/Brazil'
+}, {
+  nome: 'Inteli.Fi - Empresa de Wi-fi Ads',
+  img: '../../../assets/img/portfolio/020-intelifi.png',
+  url: 'http://www.inteli.fi/',
+  location: 'Sao Paulo/Brazil'
+}, {
   nome: 'Norsrsken Eventos',
   img: '../../../assets/img/portfolio/019-norrksken.png',
   url: 'https://norrskeneventos.com.br/',
@@ -348,7 +364,7 @@ const portfolio = [{
 
 /***/ }),
 
-/***/ 8950:
+/***/ 9238:
 /*!***************************************!*\
   !*** ./src/app/pages/pages.module.ts ***!
   \***************************************/
@@ -357,13 +373,13 @@ const portfolio = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PagesModule": () => (/* binding */ PagesModule)
+/* harmony export */   PagesModule: () => (/* binding */ PagesModule)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6477);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 6679);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ 9240);
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 5245);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ 4987);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 424);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -385,7 +401,7 @@ PagesModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule
 
 /***/ }),
 
-/***/ 5227:
+/***/ 1777:
 /*!***************************************************!*\
   !*** ./src/app/shared/footer/footer.component.ts ***!
   \***************************************************/
@@ -394,13 +410,12 @@ PagesModule = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FooterComponent": () => (/* binding */ FooterComponent)
+/* harmony export */   FooterComponent: () => (/* binding */ FooterComponent)
 /* harmony export */ });
 /* harmony import */ var _footer_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.component.html?ngResource */ 6968);
 /* harmony import */ var _footer_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.component.scss?ngResource */ 9765);
 /* harmony import */ var _footer_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 6839);
-var _class;
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 1699);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -414,12 +429,13 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 
 
 
-let FooterComponent = (_class = class FooterComponent {
+let FooterComponent = class FooterComponent {
   constructor() {
     this.today = new Date();
   }
   ngOnInit() {}
-}, _class.ctorParameters = () => [], _class);
+  static #_ = this.ctorParameters = () => [];
+};
 FooterComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.Component)({
   selector: 'app-footer',
   template: _footer_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
@@ -429,7 +445,7 @@ FooterComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.Comp
 
 /***/ }),
 
-/***/ 4696:
+/***/ 833:
 /*!***************************************************!*\
   !*** ./src/app/shared/navbar/navbar.component.ts ***!
   \***************************************************/
@@ -438,14 +454,13 @@ FooterComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.Comp
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NavbarComponent": () => (/* binding */ NavbarComponent)
+/* harmony export */   NavbarComponent: () => (/* binding */ NavbarComponent)
 /* harmony export */ });
 /* harmony import */ var _navbar_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.component.html?ngResource */ 9734);
-/* harmony import */ var _navbar_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.component.scss?ngResource */ 690);
+/* harmony import */ var _navbar_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.component.scss?ngResource */ 8385);
 /* harmony import */ var _navbar_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navbar_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6477);
-var _class;
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 6575);
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
     r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -460,7 +475,7 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 
 
 
-let NavbarComponent = (_class = class NavbarComponent {
+let NavbarComponent = class NavbarComponent {
   constructor(location, element) {
     this.location = location;
     this.element = element;
@@ -505,11 +520,12 @@ let NavbarComponent = (_class = class NavbarComponent {
       return false;
     }
   }
-}, _class.ctorParameters = () => [{
-  type: _angular_common__WEBPACK_IMPORTED_MODULE_2__.Location
-}, {
-  type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ElementRef
-}], _class);
+  static #_ = this.ctorParameters = () => [{
+    type: _angular_common__WEBPACK_IMPORTED_MODULE_2__.Location
+  }, {
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ElementRef
+  }];
+};
 NavbarComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
   selector: 'app-navbar',
   template: _navbar_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
@@ -519,7 +535,7 @@ NavbarComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Comp
 
 /***/ }),
 
-/***/ 2340:
+/***/ 553:
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
   \*****************************************/
@@ -528,7 +544,7 @@ NavbarComponent = __decorate([(0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Comp
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "environment": () => (/* binding */ environment)
+/* harmony export */   environment: () => (/* binding */ environment)
 /* harmony export */ });
 // The file contents for the current environment will overwrite these during build.
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
@@ -540,7 +556,7 @@ const environment = {
 
 /***/ }),
 
-/***/ 4431:
+/***/ 4913:
 /*!*********************!*\
   !*** ./src/main.ts ***!
   \*********************/
@@ -548,10 +564,10 @@ const environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 6839);
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ 4514);
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 6747);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ 2340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ 4737);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 8629);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ 553);
 /*!
 
  =========================================================
@@ -584,11 +600,11 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.productio
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 9579);
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ 931);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 2487);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ 1386);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___.toString();
 
@@ -602,11 +618,11 @@ module.exports = ___CSS_LOADER_EXPORT___.toString();
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 9579);
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 931);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 2487);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 1386);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___.toString();
 
@@ -620,29 +636,29 @@ module.exports = ___CSS_LOADER_EXPORT___.toString();
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 9579);
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 931);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 2487);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 1386);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ 690:
+/***/ 8385:
 /*!****************************************************************!*\
   !*** ./src/app/shared/navbar/navbar.component.scss?ngResource ***!
   \****************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 9579);
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 931);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ 2487);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ 1386);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___.toString();
 
@@ -656,7 +672,7 @@ module.exports = ___CSS_LOADER_EXPORT___.toString();
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<app-footer></app-footer>";
+module.exports = "<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>";
 
 /***/ }),
 
@@ -667,7 +683,7 @@ module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<a
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"main home\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"bg-top\">\n        <div class=\"header-content\">\n          <div class=\"inner\">\n            <h1 class=\"cursive\">Pam Gaiguer</h1>\n            <h4>Front End Developer</h4>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"section section-gray\" id=\"whoami\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12 col-md-6\">\n          <div class=\"whoami\">\n            <h1>Who Am I?</h1>\n            <p>\n              Hello, my name's Pam Gaiguer! <br />\n              I'm a Software engineer with focus on Front End Architecture by\n              trade and an musician during my free time.\n            </p>\n            <p>\n              I have 10 years of experience in Information Technology (IT),\n              including but not limited to: Business Process Modelling and\n              Notation (BPMN), Project Management and Gamification.\n              <br />\n              I also have 10 years of experience in Front-End web development\n              specialising in User Experience (UX), User Interface (UI), Angular\n              (12+) and React Typescript.\n            </p>\n            <p>\n              Click here to download my resume in English:\n              <a\n                href=\"../../../assets/PamGaiguerTechResumeEn.pdf\"\n                target=\"_blank\"\n                >Download</a\n              >\n              Or here to download my resume in Portuguese:\n              <a\n                href=\"../../../assets/PamGaiguerTechResumePTBR.pdf\"\n                target=\"_blank\"\n                >Download</a\n              >\n            </p>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md-6\">\n          <div class=\"whoami\">\n            <figure>\n              <img\n                src=\"../../../assets/img/pam_profile.jpg\"\n                class=\"pam-profile\"\n                alt=\"\"\n              />\n            </figure>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"section section-black portfolio\" id=\"portfolio\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12 col-md-12\">\n          <h1>Portfolio</h1>\n          <p>\n            <small\n              >Disclaimer: Responsibility of all products occurs at the\n              development stage only. Status and continuation of websites by the\n              end user are outside the scope of our control. Therefore some\n              webpages may no longer be active.</small\n            >\n          </p>\n          <ul class=\"list-unstyled portf-list\">\n            <li *ngFor=\"let port of portfolio; let i = index\">\n              <figure>\n                <img src=\"{{ port.img }}\" alt=\"\" class=\"img-fluid\" />\n                <figcaption>\n                  {{ port.nome }}\n                  <br />\n                  <span\n                    >Company from: <strong>{{ port.location }}</strong></span\n                  >\n                  <br />\n                  <a href=\"{{ port.url }}\" target=\"_blank\">Visit website</a>\n                </figcaption>\n              </figure>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"section section-gray resume-thanks\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12 col-md-12\">\n          <h1>Thank you :)</h1>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div class=\"main home\">\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"bg-top\">\r\n        <div class=\"header-content\">\r\n          <div class=\"inner\">\r\n            <h1 class=\"cursive\">Pam Gaiguer</h1>\r\n            <h4>Front End Developer</h4>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"section section-gray\" id=\"whoami\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-sm-12 col-md-6\">\r\n          <div class=\"whoami\">\r\n            <h1>Who Am I?</h1>\r\n            <p>\r\n              Hello, my name's Pam Gaiguer! <br />\r\n              I'm a Software engineer with focus on Front End Architecture by\r\n              trade and an musician during my free time.\r\n            </p>\r\n            <p>\r\n              I have 10 years of experience in Information Technology (IT),\r\n              including but not limited to: Business Process Modelling and\r\n              Notation (BPMN), Project Management and Gamification.\r\n              <br />\r\n              I also have 10 years of experience in Front-End web development\r\n              specialising in User Experience (UX), User Interface (UI), Angular\r\n              (12+) and React Typescript.\r\n            </p>\r\n            <p>\r\n              Click here to download my resume in English:\r\n              <a\r\n                href=\"../../../assets/PamGaiguerTechResumeEn.pdf\"\r\n                target=\"_blank\"\r\n                >Download</a\r\n              >\r\n              Or here to download my resume in Portuguese:\r\n              <a\r\n                href=\"../../../assets/PamGaiguerTechResumePTBR.pdf\"\r\n                target=\"_blank\"\r\n                >Download</a\r\n              >\r\n            </p>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-sm-12 col-md-6\">\r\n          <div class=\"whoami\">\r\n            <figure>\r\n              <img\r\n                src=\"../../../assets/img/pam_profile.jpg\"\r\n                class=\"pam-profile\"\r\n                alt=\"\"\r\n              />\r\n            </figure>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"section section-black portfolio\" id=\"portfolio\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-sm-12 col-md-12\">\r\n          <h1>Portfolio</h1>\r\n          <p>\r\n            <small\r\n              >Disclaimer: Responsibility of all products occurs at the\r\n              development stage only. Status and continuation of websites by the\r\n              end user are outside the scope of our control. Therefore some\r\n              webpages may no longer be active.</small\r\n            >\r\n          </p>\r\n          <ul class=\"list-unstyled portf-list\">\r\n            <li *ngFor=\"let port of portfolio; let i = index\">\r\n              <figure>\r\n                <img src=\"{{ port.img }}\" alt=\"\" class=\"img-fluid\" />\r\n                <figcaption>\r\n                  {{ port.nome }}\r\n                  <br />\r\n                  <span\r\n                    >Company from: <strong>{{ port.location }}</strong></span\r\n                  >\r\n                  <br />\r\n                  <a href=\"{{ port.url }}\" target=\"_blank\">Visit website</a>\r\n                </figcaption>\r\n              </figure>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"section section-gray resume-thanks\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-sm-12 col-md-12\">\r\n          <h1>Thank you :)</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n";
 
 /***/ }),
 
@@ -678,7 +694,7 @@ module.exports = "<div class=\"main home\">\n  <div class=\"container\">\n    <d
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<footer class=\"footer\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <nav class=\"footer-nav footer-link\">\n                <ul>\n\n                </ul>\n            </nav>\n            <div class=\"credits ml-auto\">\n                <span class=\"copyright\">\n                    &copy; Updated in: {{ today | date: 'MM/yyyy'}}, made by <a href=\"http://pamgaiguer-dev.web.app/\" target=\"_blank\">Pam Gaiguer</a>\n                    with <i class=\"fa fa-heart heart\"></i> \n                </span>\n            </div>\n        </div>\n    </div>\n</footer>\n";
+module.exports = "<footer class=\"footer\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <nav class=\"footer-nav footer-link\">\r\n                <ul>\r\n\r\n                </ul>\r\n            </nav>\r\n            <div class=\"credits ml-auto\">\r\n                <span class=\"copyright\">\r\n                    &copy; Updated in: {{ today | date: 'MM/yyyy'}}, made by <a href=\"http://pamgaiguer-dev.web.app/\" target=\"_blank\">Pam Gaiguer</a>\r\n                    with <i class=\"fa fa-heart heart\"></i> \r\n                </span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>\r\n";
 
 /***/ }),
 
@@ -689,14 +705,14 @@ module.exports = "<footer class=\"footer\">\n    <div class=\"container\">\n    
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-translate\">\n      <a class=\"navbar-brand\" [routerLink]=\"['/home']\"\n        ><span class=\"logo-navbar\">Pam Gaiguer</span></a\n      >\n      <button\n        class=\"navbar-toggler navbar-burger\"\n        type=\"button\"\n        data-toggle=\"collapse\"\n        data-target=\"#navbarToggler\"\n        (click)=\"sidebarToggle()\"\n      >\n        <span class=\"navbar-toggler-bar\"></span>\n        <span class=\"navbar-toggler-bar\"></span>\n        <span class=\"navbar-toggler-bar\"></span>\n      </button>\n    </div>\n    <div class=\"navbar-collapse\" id=\"navbarToggler\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" [routerLink] [fragment]=\"'whoami'\">Who am I?</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" [routerLink] [fragment]=\"'portfolio'\"\n            >Portfolio</a\n          >\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
+module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-translate\">\r\n      <a class=\"navbar-brand\" [routerLink]=\"['/home']\"\r\n        ><span class=\"logo-navbar\">Pam Gaiguer</span></a\r\n      >\r\n      <button\r\n        class=\"navbar-toggler navbar-burger\"\r\n        type=\"button\"\r\n        data-toggle=\"collapse\"\r\n        data-target=\"#navbarToggler\"\r\n        (click)=\"sidebarToggle()\"\r\n      >\r\n        <span class=\"navbar-toggler-bar\"></span>\r\n        <span class=\"navbar-toggler-bar\"></span>\r\n        <span class=\"navbar-toggler-bar\"></span>\r\n      </button>\r\n    </div>\r\n    <div class=\"navbar-collapse\" id=\"navbarToggler\">\r\n      <ul class=\"navbar-nav ml-auto\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" [routerLink] [fragment]=\"'whoami'\">Who am I?</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" [routerLink] [fragment]=\"'portfolio'\"\r\n            >Portfolio</a\r\n          >\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n";
 
 /***/ })
 
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(4431)));
+/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(4913)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
