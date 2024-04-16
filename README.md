@@ -1,7 +1,7 @@
 ### How's it going?! I'm Pam and...
 
 - 👩🏻‍💻 FrontEnd development with Angular and React, which includes HTML, CSS, SCSS, Typescript and Javascript.
-- 👩🏻‍💻 Currently working @ **Xgen** in Sao Paulo/SP/Brazil as a **Senior Angular FrontEnd Dev**.
+- 👩🏻‍💻 Currently working @ **Quantiz** in Sao Paulo/SP/Brazil as a **Senior Developer / Tech Lead**.
 - 🎤 Writing the new songs for @AurosBand!
 - 💬 Ask me about **Music**, FrontEnd Dev, UI/UX, Bartending, Travel, Brazil and Australia!
 - 📫 How to reach me: [Twitter](https://twitter.com/pamgaiguer) or [LinkedIn](https://www.linkedin.com/in/pamellagaiguer/)
